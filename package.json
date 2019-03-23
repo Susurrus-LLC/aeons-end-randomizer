@@ -24,7 +24,7 @@
   ],
   "devDependencies": {
     "react-app-rewire-postcss": "^3.0.2",
-    "react-app-rewired": "^2.0.3",
+    "react-app-rewired": "^2.1.1",
     "standard": "^12.0.1"
   }
 }
