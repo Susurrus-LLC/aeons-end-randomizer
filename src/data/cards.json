@@ -1,1 +1,164 @@
-{}
+[
+  {
+    "name": "Jade",
+    "type": "gem",
+    "set": "AE",
+    "cost": 2
+  },
+  {
+    "name": "Sifter’s Pearl",
+    "type": "gem",
+    "set": "AE",
+    "cost": 3
+  },
+  {
+    "name": "V’riswood Amber",
+    "type": "gem",
+    "set": "AE",
+    "cost": 3
+  },
+  {
+    "name": "Diamond Cluster",
+    "type": "gem",
+    "set": "AE",
+    "cost": 4
+  },
+  {
+    "name": "Searing Ruby",
+    "type": "gem",
+    "set": "AE",
+    "cost": 4
+  },
+  {
+    "name": "Burning Opal",
+    "type": "gem",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Clouded Sapphire",
+    "type": "gem",
+    "set": "AE",
+    "cost": 6
+  },
+  {
+    "name": "Flexing Dagger",
+    "type": "relic",
+    "set": "AE",
+    "cost": 2
+  },
+  {
+    "name": "Bottled Vortex",
+    "type": "relic",
+    "set": "AE",
+    "cost": 3
+  },
+  {
+    "name": "Unstable Prism",
+    "type": "relic",
+    "set": "AE",
+    "cost": 3
+  },
+  {
+    "name": "Blasting Staff",
+    "type": "relic",
+    "set": "AE",
+    "cost": 4
+  },
+  {
+    "name": "Focusing Orb",
+    "type": "relic",
+    "set": "AE",
+    "cost": 4
+  },
+  {
+    "name": "Mage’s Talisman",
+    "type": "relic",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Phoenix Flame",
+    "type": "spell",
+    "set": "AE",
+    "cost": 3
+  },
+  {
+    "name": "Spectral Echo",
+    "type": "spell",
+    "set": "AE",
+    "cost": 3
+  },
+  {
+    "name": "Ignite",
+    "type": "spell",
+    "set": "AE",
+    "cost": 4
+  },
+  {
+    "name": "Lava Tendril",
+    "type": "spell",
+    "set": "AE",
+    "cost": 4
+  },
+  {
+    "name": "Amplify Vision",
+    "type": "spell",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Dark Fire",
+    "type": "spell",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Essence Theft",
+    "type": "spell",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Feral Lightning",
+    "type": "spell",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Oblivion Swell",
+    "type": "spell",
+    "set": "AE",
+    "cost": 5
+  },
+  {
+    "name": "Chaos Arc",
+    "type": "spell",
+    "set": "AE",
+    "cost": 6
+  },
+  {
+    "name": "Planar Insight",
+    "type": "spell",
+    "set": "AE",
+    "cost": 6
+  },
+  {
+    "name": "Wildfire Whip",
+    "type": "spell",
+    "set": "AE",
+    "cost": 6
+  },
+  {
+    "name": "Arcane Nexus",
+    "type": "spell",
+    "set": "AE",
+    "cost": 7
+  },
+  {
+    "name": "Consuming Void",
+    "type": "spell",
+    "set": "AE",
+    "cost": 7
+  }
+]
