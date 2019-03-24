@@ -526,5 +526,35 @@
     "type": "spell",
     "set": "OD",
     "cost": 8
+  },
+  {
+    "name": "Fleeting Vision",
+    "type": "spell",
+    "set": "PM",
+    "cost": 3
+  },
+  {
+    "name": "Echo Stone",
+    "type": "gem",
+    "set": "PM",
+    "cost": 4
+  },
+  {
+    "name": "Thieving Spirit",
+    "type": "spell",
+    "set": "PM",
+    "cost": 5
+  },
+  {
+    "name": "Splinter Missile",
+    "type": "spell",
+    "set": "PM",
+    "cost": 5
+  },
+  {
+    "name": "Drown in Flames",
+    "type": "spell",
+    "set": "PM",
+    "cost": 6
   }
 ]
