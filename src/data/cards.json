@@ -250,5 +250,167 @@
     "type": "spell",
     "set": "TN",
     "cost": 8
+  },
+  {
+    "name": "Dread Diamond",
+    "type": "gem",
+    "set": "WE",
+    "cost": 3
+  },
+  {
+    "name": "Frozen Magmite",
+    "type": "gem",
+    "set": "WE",
+    "cost": 3
+  },
+  {
+    "name": "Volcanic Glass",
+    "type": "gem",
+    "set": "WE",
+    "cost": 3
+  },
+  {
+    "name": "Breach Ore",
+    "type": "gem",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Scoria Slag",
+    "type": "gem",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Erratic Ingot",
+    "type": "gem",
+    "set": "WE",
+    "cost": 5
+  },
+  {
+    "name": "Bloodstone Jewel",
+    "type": "gem",
+    "set": "WE",
+    "cost": 6
+  },
+  {
+    "name": "Mage’s Totem",
+    "type": "relic",
+    "set": "WE",
+    "cost": 2
+  },
+  {
+    "name": "Conclave Scroll",
+    "type": "relic",
+    "set": "WE",
+    "cost": 3
+  },
+  {
+    "name": "Fiend Catcher",
+    "type": "relic",
+    "set": "WE",
+    "cost": 3
+  },
+  {
+    "name": "Cairn Compass",
+    "type": "relic",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Primordial Fetish",
+    "type": "relic",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Vortex Gauntlet",
+    "type": "relic",
+    "set": "WE",
+    "cost": 6
+  },
+  {
+    "name": "Thoughtform Familiar",
+    "type": "spell",
+    "set": "WE",
+    "cost": 3
+  },
+  {
+    "name": "Carbonize",
+    "type": "spell",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Jagged Lightning",
+    "type": "spell",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Kindle",
+    "type": "spell",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Pyrotechnic Surge",
+    "type": "spell",
+    "set": "WE",
+    "cost": 4
+  },
+  {
+    "name": "Aurora",
+    "type": "spell",
+    "set": "WE",
+    "cost": 5
+  },
+  {
+    "name": "Celestial Spire",
+    "type": "spell",
+    "set": "WE",
+    "cost": 5
+  },
+  {
+    "name": "Convection Field",
+    "type": "spell",
+    "set": "WE",
+    "cost": 5
+  },
+  {
+    "name": "Fiery Torrent",
+    "type": "spell",
+    "set": "WE",
+    "cost": 5
+  },
+  {
+    "name": "Conjure the Lost",
+    "type": "spell",
+    "set": "WE",
+    "cost": 6
+  },
+  {
+    "name": "Nova Forge",
+    "type": "spell",
+    "set": "WE",
+    "cost": 6
+  },
+  {
+    "name": "Equilibrium",
+    "type": "spell",
+    "set": "WE",
+    "cost": 7
+  },
+  {
+    "name": "Reduce to Ash",
+    "type": "spell",
+    "set": "WE",
+    "cost": 7
+  },
+  {
+    "name": "Crystallize",
+    "type": "spell",
+    "set": "WE",
+    "cost": 8
   }
 ]
