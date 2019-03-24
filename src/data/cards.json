@@ -412,5 +412,53 @@
     "type": "spell",
     "set": "WE",
     "cost": 8
+  },
+  {
+    "name": "Fossilized Scarab",
+    "type": "gem",
+    "set": "TV",
+    "cost": 3
+  },
+  {
+    "name": "Eternity Charm",
+    "type": "relic",
+    "set": "TV",
+    "cost": 3
+  },
+  {
+    "name": "Dimensional Key",
+    "type": "relic",
+    "set": "TV",
+    "cost": 8
+  },
+  {
+    "name": "Inner Fire",
+    "type": "spell",
+    "set": "TV",
+    "cost": 2
+  },
+  {
+    "name": "Conflagration",
+    "type": "spell",
+    "set": "TV",
+    "cost": 3
+  },
+  {
+    "name": "Thermal Dart",
+    "type": "spell",
+    "set": "TV",
+    "cost": 4
+  },
+  {
+    "name": "Fulminate",
+    "type": "spell",
+    "set": "TV",
+    "cost": 5
+  },
+  {
+    "name": "Resonate",
+    "type": "spell",
+    "set": "TV",
+    "cost": 6
   }
 ]
