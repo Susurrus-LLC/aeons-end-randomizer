@@ -1,0 +1,27 @@
+@import ../../styles/variables
+
+footer
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: baseline
+  align-content: space-between
+  padding: $lnht * 1rem 0
+  border-top: 1px solid $red
+
+  [class$='-block']
+    width: 50%
+
+    &:first-child
+      text-align: left
+
+    &:last-child
+      text-align: right
+
+  p
+    font-size: $msb0 * 1rem
+    line-height: $lnht / $msb0
+    flex-grow: 0
+    margin: 0
