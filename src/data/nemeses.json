@@ -1,0 +1,37 @@
+[
+  {
+    "nemesis": "Rageborne",
+    "difficulty": 2,
+    "set": "AE"
+  },
+  {
+    "nemesis": "Carapace Queen",
+    "difficulty": 3,
+    "set": "AE"
+  },
+  {
+    "nemesis": "Crooked Mask",
+    "difficulty": 5,
+    "set": "AE"
+  },
+  {
+    "nemesis": "Prince of Gluttons",
+    "difficulty": 5,
+    "set": "AE"
+  },
+  {
+    "nemesis": "Horde Crone",
+    "difficulty": 6,
+    "set": "TD"
+  },
+  {
+    "nemesis": "Blight Lord",
+    "difficulty": 4,
+    "set": "TN"
+  },
+  {
+    "nemesis": "Wayward One",
+    "difficulty": 7,
+    "set": "TN"
+  }
+]
