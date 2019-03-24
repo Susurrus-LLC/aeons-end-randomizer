@@ -460,5 +460,71 @@
     "type": "spell",
     "set": "TV",
     "cost": 6
+  },
+  {
+    "name": "Haunted Berylite",
+    "type": "gem",
+    "set": "OD",
+    "cost": 3
+  },
+  {
+    "name": "Alien Element",
+    "type": "gem",
+    "set": "OD",
+    "cost": 4
+  },
+  {
+    "name": "Pain Stone",
+    "type": "gem",
+    "set": "OD",
+    "cost": 6
+  },
+  {
+    "name": "Riddlesphere",
+    "type": "relic",
+    "set": "OD",
+    "cost": 3
+  },
+  {
+    "name": "Astral Cube",
+    "type": "relic",
+    "set": "OD",
+    "cost": 5
+  },
+  {
+    "name": "Feedback Aura",
+    "type": "spell",
+    "set": "OD",
+    "cost": 5
+  },
+  {
+    "name": "Scorch",
+    "type": "spell",
+    "set": "OD",
+    "cost": 5
+  },
+  {
+    "name": "Catalyst",
+    "type": "spell",
+    "set": "OD",
+    "cost": 6
+  },
+  {
+    "name": "Nether Conduit",
+    "type": "spell",
+    "set": "OD",
+    "cost": 7
+  },
+  {
+    "name": "Pyromancy",
+    "type": "spell",
+    "set": "OD",
+    "cost": 7
+  },
+  {
+    "name": "Char",
+    "type": "spell",
+    "set": "OD",
+    "cost": 8
   }
 ]
