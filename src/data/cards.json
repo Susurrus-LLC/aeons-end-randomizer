@@ -208,5 +208,47 @@
     "type": "spell",
     "set": "TD",
     "cost": 8
+  },
+  {
+    "name": "Leeching Agate",
+    "type": "gem",
+    "set": "TN",
+    "cost": 3
+  },
+  {
+    "name": "Molten Hammer",
+    "type": "relic",
+    "set": "TN",
+    "cost": 5
+  },
+  {
+    "name": "Temporal Helix",
+    "type": "relic",
+    "set": "TN",
+    "cost": 7
+  },
+  {
+    "name": "Blaze",
+    "type": "spell",
+    "set": "TN",
+    "cost": 4
+  },
+  {
+    "name": "Scrying Bolt",
+    "type": "spell",
+    "set": "TN",
+    "cost": 6
+  },
+  {
+    "name": "Sage’s Brand",
+    "type": "spell",
+    "set": "TN",
+    "cost": 7
+  },
+  {
+    "name": "Radiance",
+    "type": "spell",
+    "set": "TN",
+    "cost": 8
   }
 ]
