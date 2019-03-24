@@ -1,2 +1,23 @@
+@import ./styles/functions
+@import ./styles/variables
+
 .App
-  text-align: center
+  width: $ms2 * pow($ratio, 19) * 1rem // 78.063rem; 1,249px
+  max-width: 92%
+  min-height: 100%
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  justify-content: space-between
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto 1fr auto
+
+  header, main, footer
+    width: 100%
+    flex-shrink: 0
+
+  main
+    flex-grow: 1
+    flex-basis: auto
