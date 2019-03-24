@@ -556,5 +556,137 @@
     "type": "spell",
     "set": "PM",
     "cost": 6
+  },
+  {
+    "name": "Jolting Crust",
+    "type": "gem",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Summonite",
+    "type": "gem",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Voidium Spike",
+    "type": "gem",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Triplite Core",
+    "type": "gem",
+    "set": "BS",
+    "cost": 4
+  },
+  {
+    "name": "Mentite Chunk",
+    "type": "gem",
+    "set": "BS",
+    "cost": 5
+  },
+  {
+    "name": "Muted Lacosite",
+    "type": "gem",
+    "set": "BS",
+    "cost": 5
+  },
+  {
+    "name": "Oblivium Resin",
+    "type": "gem",
+    "set": "BS",
+    "cost": 5
+  },
+  {
+    "name": "Shining Tetrite",
+    "type": "gem",
+    "set": "BS",
+    "cost": 6
+  },
+  {
+    "name": "Scholar’s Opus",
+    "type": "relic",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Living Gauntlet",
+    "type": "relic",
+    "set": "BS",
+    "cost": 4
+  },
+  {
+    "name": "Manifold Container",
+    "type": "relic",
+    "set": "BS",
+    "cost": 4
+  },
+  {
+    "name": "Soul Cords",
+    "type": "relic",
+    "set": "BS",
+    "cost": 5
+  },
+  {
+    "name": "Bottled Star",
+    "type": "relic",
+    "set": "BS",
+    "cost": 7
+  },
+  {
+    "name": "Draining Touch",
+    "type": "spell",
+    "set": "BS",
+    "cost": 2
+  },
+  {
+    "name": "Nerve Jab",
+    "type": "spell",
+    "set": "BS",
+    "cost": 2
+  },
+  {
+    "name": "Burning Current",
+    "type": "spell",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Double Tap",
+    "type": "spell",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Precision Shot",
+    "type": "spell",
+    "set": "BS",
+    "cost": 3
+  },
+  {
+    "name": "Flash of Intellect",
+    "type": "spell",
+    "set": "BS",
+    "cost": 4
+  },
+  {
+    "name": "Stunning Force",
+    "type": "spell",
+    "set": "BS",
+    "cost": 5
+  },
+  {
+    "name": "Blade of Wisdom",
+    "type": "spell",
+    "set": "BS",
+    "cost": 6
+  },
+  {
+    "name": "Psychic Eruption",
+    "type": "spell",
+    "set": "BS",
+    "cost": 8
   }
 ]
