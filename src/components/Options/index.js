@@ -24,6 +24,17 @@ const Options = () => {
   const [pmTS, setPMTS] = useState(false)
   const [pmSM, setPMSM] = useState(false)
   const [pmDF, setPMDF] = useState(false)
+  const [players, setPlayers] = useState(4)
+
+  const playersNum = (val) => {
+    if (val < 1) {
+      setPlayers(1)
+    } else if (val > 4) {
+      setPlayers(4)
+    } else {
+      setPlayers(Math.round(val))
+    }
+  }
 
   return (
     <div className='options'>
@@ -261,6 +272,17 @@ const Options = () => {
           onChange={() => setPMDF(!pmDF)}
         />{' '}
         Drown in Flames
+      </label>
+      <label htmlFor='players' className='players'>
+        <input
+          type='number'
+          id='players'
+          name='players'
+          min='1'
+          max='4'
+          value={players}
+          onChange={e => playersNum(e.target.value)}
+        />
       </label>
     </div>
   )
