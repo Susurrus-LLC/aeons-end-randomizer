@@ -1,13 +1,24 @@
 @import ../../styles/variables
 
 .options
-  label
-    display: block
-
-    &.expansion
-      margin-left: $ms2 * 1rem
-    &.legacy-mages
-      margin-left: $ms2 * 2rem
-
   input[type='checkbox']
     vertical-align: middle
+
+  input[type='number']
+    width: $ms8 * 1rem
+
+  .options-list
+    margin: 0
+    padding: 0
+
+    li
+      list-style: none
+
+      &.expansion
+        margin-left: $ms2 * 1rem
+
+      &.legacy-mages
+        margin-left: $ms2 * 2rem
+
+  .next-level
+    padding-left: $ms2 * 1rem
