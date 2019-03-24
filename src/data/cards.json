@@ -160,5 +160,53 @@
     "type": "spell",
     "set": "AE",
     "cost": 7
+  },
+  {
+    "name": "Banishing Topaz",
+    "type": "gem",
+    "set": "TD",
+    "cost": 5
+  },
+  {
+    "name": "Transmogrifier",
+    "type": "relic",
+    "set": "TD",
+    "cost": 4
+  },
+  {
+    "name": "Vim Dynamo",
+    "type": "relic",
+    "set": "TD",
+    "cost": 4
+  },
+  {
+    "name": "Void Bond",
+    "type": "spell",
+    "set": "TD",
+    "cost": 4
+  },
+  {
+    "name": "Combustion",
+    "type": "spell",
+    "set": "TD",
+    "cost": 5
+  },
+  {
+    "name": "Devouring Shadow",
+    "type": "spell",
+    "set": "TD",
+    "cost": 6
+  },
+  {
+    "name": "Disintegrating Scythe",
+    "type": "spell",
+    "set": "TD",
+    "cost": 7
+  },
+  {
+    "name": "Monstrous Inferno",
+    "type": "spell",
+    "set": "TD",
+    "cost": 8
   }
 ]
