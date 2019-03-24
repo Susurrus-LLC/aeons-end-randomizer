@@ -1,0 +1,40 @@
+@import ./functions
+
+$font: "Arimo", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+
+/*
+ * Modular Scale
+ * https://alistapart.com/article/more-meaningful-typography
+ * 1.000rem @ 1:1.250
+ * 1.125rem @ 1:1.250
+ * https://www.modularscale.com/?1,1.125&em&1.25
+ */
+
+// All sizes are given as pure numbers, so must be given the unit 'rem'
+
+$ratio: 5.0 / 4.0             // 1.25
+$msa: 1.0
+$msb: 1.125
+$msa0: $msa / pow($ratio, 1)  // 0.8
+$msb0: $msb / pow($ratio, 1)  // 0.9
+$ms1: $msa                    // 1.0
+$ms2: $msb                    // 1.125
+$ms3: $msa * pow($ratio, 1)   // 1.25
+$ms4: $msb * pow($ratio, 1)   // 1.40625
+$ms5: $msa * pow($ratio, 2)   // 1.5625
+$ms6: $msb * pow($ratio, 2)   // 1.7578125
+$ms7: $msa * pow($ratio, 3)   // 1.953125
+$ms8: $msb * pow($ratio, 3)   // 2.197265625
+$lnht: $ratio                 // 1.25
+
+// Colors based on https://tallys.github.io/color-theory/
+
+$red-pmy: hsl(13, 100%, 50%)
+$blu-pmy: hsl(205, 100%, 50%)
+
+$red: darken(harmonious-mix($blu-pmy, $red-pmy), 10%)
+$blu: harmonious-mix($red-pmy, $blu-pmy)
+$blu-ntl: mix-neutral($blu)
+$red-ntl: mix-neutral($red)
+$white: grayscale(hsl(hue($blu-ntl), saturation($blu-ntl), 99%))
+$black: grayscale(hsl(hue($blu-ntl), saturation($blu-ntl), 4%))

@@ -1,0 +1,95 @@
+@import ./variables
+
+*
+  box-sizing: border-box
+
+html, body, #root
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+  padding-left: calc(100vw - 100%)
+  font-family: $font
+  font-size: $ms1 * 1rem
+  line-height: $lnht * 1rem
+  background-color: $white
+  color: $black
+  font-kerning: normal
+  font-variant-ligatures: common-ligatures contextual
+  font-feature-settings: "kern" "liga" "clig" "calt"
+
+h1, h2, h3, h4, h5, h6
+  text-rendering: optimizeLegibility
+  margin: $ms8 * 1rem 0 (2rem * $lnht) - $ms8
+
+h1, h2, h3, h4, h5, h6, p
+  padding: 0
+
+h1
+  color: darken($red, 0.2)
+  font-size: $ms5 * 1rem
+  line-height: ($lnht * 2) / $ms5
+
+h2
+  color: darken($red, 0.16)
+  font-size: $ms4 * 1rem
+  line-height: ($lnht * 2) / $ms4
+
+h3
+  color: darken($red, 0.12)
+  font-size: $ms3 * 1rem
+  line-height: ($lnht * 2) / $ms3
+
+h4
+  color: darken($red, 0.08)
+  font-size: $ms2 * 1rem
+  line-height: ($lnht * 2) / $ms2
+
+h5
+  color: darken($red, 0.04)
+  font-size: $ms1 * 1rem
+  line-height: ($lnht * 2) / $ms1
+
+h6
+  color: $red
+  font-size: $msb0 * 1rem
+  line-height: ($lnht * 2) / $msb0
+
+p
+  color: $black
+  font-size: $ms1 * 1rem
+  line-height: $lnht * 1rem
+  margin: $lnht * 1rem 0
+
+a
+  &:link, &:visited, &:hover, &:active
+    text-decoration: underline
+  &:link, &:visited
+    color: $blu
+  &:hover
+    color: darken($blu, 0.15)
+  &:active
+    color: $red-ntl
+  &.active
+    &:link, &:visited
+      color: $red
+    &:hover
+      color: darken($red-ntl, 0.15)
+    &:active
+      color: darken($red-ntl, 0.25)
+
+button
+  font-family: $font
+  font-size: $ms1 * 1rem
+  cursor: pointer
+  border: 1px solid transparentize(darken($blu, 0.15), 0.3)
+  background: none
+  background-color: darken($white, 0.05)
+  padding: $lnht * 0.5rem
+  border-radius: 3px
+  &:hover
+    background-color: darken($white, 0.1)
+  &:active
+    background-color: darken($white, 0.15)
+    box-shadow: inset 0 0 $lnht * 0.5rem darken($white, 0.25)
