@@ -528,36 +528,6 @@
     "cost": 8
   },
   {
-    "name": "Fleeting Vision",
-    "type": "spell",
-    "set": "PM",
-    "cost": 3
-  },
-  {
-    "name": "Echo Stone",
-    "type": "gem",
-    "set": "PM",
-    "cost": 4
-  },
-  {
-    "name": "Thieving Spirit",
-    "type": "spell",
-    "set": "PM",
-    "cost": 5
-  },
-  {
-    "name": "Splinter Missile",
-    "type": "spell",
-    "set": "PM",
-    "cost": 5
-  },
-  {
-    "name": "Drown in Flames",
-    "type": "spell",
-    "set": "PM",
-    "cost": 6
-  },
-  {
     "name": "Jolting Crust",
     "type": "gem",
     "set": "BS",
@@ -910,5 +880,35 @@
     "type": "spell",
     "set": "LG",
     "cost": 9
+  },
+  {
+    "name": "Echo Stone",
+    "type": "gem",
+    "set": "PMES",
+    "cost": 4
+  },
+  {
+    "name": "Fleeting Vision",
+    "type": "spell",
+    "set": "PMFV",
+    "cost": 3
+  },
+  {
+    "name": "Thieving Spirit",
+    "type": "spell",
+    "set": "PMTS",
+    "cost": 5
+  },
+  {
+    "name": "Splinter Missile",
+    "type": "spell",
+    "set": "PMSM",
+    "cost": 5
+  },
+  {
+    "name": "Drown in Flames",
+    "type": "spell",
+    "set": "PMDF",
+    "cost": 6
   }
 ]
