@@ -1,10 +1,12 @@
 import React from 'react'
 
+import Options from '../Options'
+
 import './main.sass'
 
 const Main = () => (
   <main className='main'>
-    <p className='title'>Main Area</p>
+    <Options />
   </main>
 )
 

@@ -17,9 +17,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "dependencies": {
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
@@ -28,7 +25,18 @@
     "react-scripts": "2.1.8"
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^1.6.0",
     "standard": "^12.0.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": [
     ">0.2%",
