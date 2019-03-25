@@ -26,16 +26,6 @@ const Options = () => {
   const [pmDF, setPMDF] = useState(false)
   const [players, setPlayers] = useState(4)
 
-  const playersNum = (val) => {
-    if (val < 1) {
-      setPlayers(1)
-    } else if (val > 4) {
-      setPlayers(4)
-    } else {
-      setPlayers(Math.round(val))
-    }
-  }
-
   return (
     <div className='options'>
       <ul className='options-list'>
@@ -328,15 +318,18 @@ const Options = () => {
         </li>
         <li>
           <label htmlFor='players' className='players'>
-            <input
-              type='number'
+            <select
               id='players'
               name='players'
-              min='1'
-              max='4'
-              value={players}
-              onChange={e => playersNum(e.target.value)}
-            />{' '}
+              onChange={e => setPlayers(e.target.value)}
+              selected={players}
+              defaultValue='4'
+            >
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+              <option value='4'>4</option>
+            </select>{' '}
             number of players
           </label>
         </li>

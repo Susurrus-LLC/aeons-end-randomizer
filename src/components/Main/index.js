@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Options from '../Options'
+import Form from '../Form'
 
 import './main.sass'
 
 const Main = () => (
   <main className='main'>
-    <Options />
+    <Form />
   </main>
 )
 
