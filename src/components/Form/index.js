@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Options from '../Options'
+import MarketSetup from '../MarketSetup'
 
 import './form.sass'
 
@@ -11,6 +12,7 @@ const Form = () => (
     className='form'
   >
     <Options />
+    <MarketSetup />
   </form>
 )
 
