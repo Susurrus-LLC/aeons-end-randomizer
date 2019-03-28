@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import Markets from '../../data/marketTemplates.json'
 
+import Card from '../Card'
+
 import './marketsetup.sass'
 
 const MarketSetup = () => {
@@ -27,9 +29,11 @@ const MarketSetup = () => {
   }
 
   const displayCards = () => cards().map((crd, i) => (
-    <div className={`card card${i}`} key={i}>
-      {JSON.stringify(crd)}
-    </div>
+    <Card
+      card={JSON.stringify(crd)}
+      index={i + 1}
+      key={i}
+    />
   ))
 
   return (
