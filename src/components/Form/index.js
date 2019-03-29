@@ -4,6 +4,7 @@ import Markets from '../../data/marketTemplates.json'
 
 import Sets from '../Sets'
 import MarketSetup from '../MarketSetup'
+import Combatants from '../Combatants'
 
 import './form.sass'
 
@@ -29,9 +30,11 @@ const Form = () => {
   const [pmTS, setPMTS] = useState(false)
   const [pmSM, setPMSM] = useState(false)
   const [pmDF, setPMDF] = useState(false)
-  const [players, setPlayers] = useState(4)
   const [selected, setSelected] = useState(Markets[0].name)
   const [market, setMarket] = useState(Markets[0])
+  const [players, setPlayers] = useState(4)
+  const [minNem, setMinNem] = useState(1)
+  const [maxNem, setMaxNem] = useState(10)
 
   return (
     <form
@@ -83,8 +86,6 @@ const Form = () => {
           setPMSM={setPMSM}
           pmDF={pmDF}
           setPMDF={setPMDF}
-          players={players}
-          setPlayers={setPlayers}
         />
       </div>
       <div className='column'>
@@ -94,6 +95,16 @@ const Form = () => {
           market={market}
           setMarket={setMarket}
           markets={Markets}
+        />
+      </div>
+      <div className='column'>
+        <Combatants
+          players={players}
+          setPlayers={setPlayers}
+          minNem={minNem}
+          setMinNem={setMinNem}
+          maxNem={maxNem}
+          setMaxNem={setMaxNem}
         />
       </div>
     </form>

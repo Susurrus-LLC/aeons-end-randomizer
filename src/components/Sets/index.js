@@ -301,23 +301,6 @@ const Sets = props => (
           </li>
         </ul>
       </li>
-      <li>
-        <label htmlFor='players' className='players'>
-          <select
-            id='players'
-            name='players'
-            selected={props.players}
-            defaultValue='4'
-            onChange={e => props.setPlayers(e.target.value)}
-          >
-            <option value='1'>1</option>
-            <option value='2'>2</option>
-            <option value='3'>3</option>
-            <option value='4'>4</option>
-          </select>{' '}
-          number of players
-        </label>
-      </li>
     </ul>
   </div>
 )
