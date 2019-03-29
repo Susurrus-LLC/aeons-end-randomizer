@@ -3,15 +3,11 @@
 .card
   width: 100%
   max-width: (1 / 3) * 100%
-  border: 1px solid $black
+  border: 1px solid transparentize($black, 0.75)
   border-radius: $msa0 * 1rem
 
   @supports (display:grid)
     max-width: 100%
-
-  .card-text
-    margin: $msa0 * 1rem 0
-    text-align: center
 
   &.gem
     background-color: transparentize($red-ntl, 0.92)
@@ -21,3 +17,11 @@
 
   &.spell
     background-color: transparentize($ylw-ntl, 0.92)
+
+  .card-text
+    margin: $msa0 * 1rem 0
+    text-align: center
+
+  .card-type
+    text-transform: uppercase
+    font-variant: small-caps
