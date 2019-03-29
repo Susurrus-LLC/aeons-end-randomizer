@@ -31,10 +31,13 @@ $lnht: $ms4                 // 1.40625
 
 $red-pmy: hsl(13, 100%, 50%)
 $blu-pmy: hsl(205, 100%, 50%)
+$ylw-pmy: hsl(61, 100%, 50%)
 
 $red: darken(harmonious-mix($blu-pmy, $red-pmy), 10%)
 $blu: harmonious-mix($red-pmy, $blu-pmy)
+$ylw: harmonious-mix($red-pmy, $ylw-pmy)
 $blu-ntl: mix-neutral($blu)
 $red-ntl: mix-neutral($red)
+$ylw-ntl: mix-neutral($ylw)
 $white: grayscale(hsl(hue($blu-ntl), saturation($blu-ntl), 99%))
 $black: grayscale(hsl(hue($blu-ntl), saturation($blu-ntl), 4%))

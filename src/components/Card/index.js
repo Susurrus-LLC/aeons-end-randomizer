@@ -23,7 +23,10 @@ const Card = props => {
   }
 
   return (
-    <div id={`card-${props.index}`} className='card'>
+    <div
+      id={`card-${props.index}`}
+      className={card.type ? `card ${card.type}` : 'card'}
+    >
       <p className='card-text card-type'>{card.type}</p>
       <p className='card-text card-cost'>{cost()}</p>
     </div>

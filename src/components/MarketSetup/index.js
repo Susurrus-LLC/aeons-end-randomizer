@@ -47,7 +47,9 @@ const MarketSetup = () => {
       >
         {setOptions()}
       </select>
-      {displayCards()}
+      <div className='setup-grid'>
+        {displayCards()}
+      </div>
     </div>
   )
 }
