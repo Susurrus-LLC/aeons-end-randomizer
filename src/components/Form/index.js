@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import Markets from '../../data/marketTemplates.json'
 
-import Options from '../Options'
+import Sets from '../Sets'
 import MarketSetup from '../MarketSetup'
 
 import './form.sass'
@@ -39,7 +39,7 @@ const Form = () => {
       name='form'
       className='form'
     >
-      <Options
+      <Sets
         ae={ae}
         setAE={setAE}
         td={td}

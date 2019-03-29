@@ -1,10 +1,10 @@
 import React from 'react'
 
-import './options.sass'
+import './sets.sass'
 
-const Options = props => (
-  <div className='options'>
-    <ul className='options-list'>
+const Sets = props => (
+  <div className='sets'>
+    <ul className='sets-list'>
       <li className='base'>
         <label htmlFor='AE'>
           <input
@@ -313,4 +313,4 @@ const Options = props => (
   </div>
 )
 
-export default Options
+export default Sets
