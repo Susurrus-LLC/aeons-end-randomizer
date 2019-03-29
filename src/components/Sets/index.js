@@ -179,6 +179,7 @@ const Sets = props => (
             value='NA'
             checked={props.na}
             onChange={() => props.setNA(!props.na)}
+            disabled
           />{' '}
           The New Age
         </label>
@@ -192,6 +193,7 @@ const Sets = props => (
             value='SD'
             checked={props.sd}
             onChange={() => props.setSD(!props.sd)}
+            disabled
           />{' '}
           Shattered Dreams
         </label>
@@ -205,6 +207,7 @@ const Sets = props => (
             value='TA'
             checked={props.ta}
             onChange={() => props.setTA(!props.ta)}
+            disabled
           />{' '}
           The Ancients
         </label>
@@ -218,6 +221,7 @@ const Sets = props => (
             value='IW'
             checked={props.iw}
             onChange={() => props.setIW(!props.iw)}
+            disabled
           />{' '}
           Into the Wild
         </label>
@@ -234,6 +238,7 @@ const Sets = props => (
                 value='PMES'
                 checked={props.pmES}
                 onChange={() => props.setPMES(!props.pmES)}
+                disabled
               />{' '}
               Echo Stone
             </label>
@@ -247,6 +252,7 @@ const Sets = props => (
                 value='PMFV'
                 checked={props.pmFV}
                 onChange={() => props.setPMFV(!props.pmFV)}
+                disabled
               />{' '}
               Fleeting Vision
             </label>
@@ -260,6 +266,7 @@ const Sets = props => (
                 value='PMTS'
                 checked={props.pmTS}
                 onChange={() => props.setPMTS(!props.pmTS)}
+                disabled
               />{' '}
               Thieving Spirit
             </label>
@@ -273,6 +280,7 @@ const Sets = props => (
                 value='PMSM'
                 checked={props.pmSM}
                 onChange={() => props.setPMSM(!props.pmSM)}
+                disabled
               />{' '}
               Splinter Missile
             </label>
@@ -286,6 +294,7 @@ const Sets = props => (
                 value='PMDF'
                 checked={props.pmDF}
                 onChange={() => props.setPMDF(!props.pmDF)}
+                disabled
               />{' '}
               Drown in Flames
             </label>
