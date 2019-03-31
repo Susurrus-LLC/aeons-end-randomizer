@@ -9,7 +9,7 @@ import Submit from '../Submit'
 
 import './form.sass'
 
-const Form = () => {
+const Form = props => {
   const [ae, setAE] = useState(true)
   const [td, setTD] = useState(false)
   const [tn, setTN] = useState(false)
@@ -37,9 +37,7 @@ const Form = () => {
   const [minNem, setMinNem] = useState(1)
   const [maxNem, setMaxNem] = useState(10)
 
-  const randomize = () => {
-    return true
-  }
+  const randomize = () => props.setData({ ae, td, tn, we, tv, od, lg, lgb, lgg, lgo, lgy, bs, na, sd, ta, iw, pmES, pmFV, pmTS, pmSM, pmDF, selected, market, mages, minNem, maxNem })
 
   return (
     <form
