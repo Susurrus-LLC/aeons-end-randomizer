@@ -99,3 +99,15 @@ button
 a:focus, button:focus, input:focus, select:focus
   outline: 1px solid transparentize($blu, 0.5)
   outline-offset: 2px
+
+::-webkit-scrollbar
+  width: $msa0 * 1rem
+
+::-webkit-scrollbar-track
+  background-color: transparent
+
+::-webkit-scrollbar-thumb
+  background-color: transparentize($red-ntl, 0.15)
+
+  &:hover
+    background-color: transparentize(darken($red-ntl, 3), 0.15)
