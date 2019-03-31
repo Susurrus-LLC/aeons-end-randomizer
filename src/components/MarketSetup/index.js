@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import Card from '../Card'
+import SampleCard from '../SampleCard'
 
 import './marketsetup.sass'
 
@@ -24,7 +24,7 @@ const MarketSetup = props => {
   }
 
   const displayCards = () => cards().map((crd, i) => (
-    <Card
+    <SampleCard
       card={JSON.stringify(crd)}
       index={i + 1}
       key={i}

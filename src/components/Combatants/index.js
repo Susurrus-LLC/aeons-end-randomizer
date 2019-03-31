@@ -14,20 +14,20 @@ const Combatants = props => {
   return (
     <div className='combatants'>
       <p>
-        <label htmlFor='players' className='players'>
+        <label htmlFor='mages' className='mages'>
           <select
-            id='players'
-            name='players'
-            selected={props.players}
+            id='mages'
+            name='mages'
+            selected={props.mages}
             defaultValue='4'
-            onChange={e => props.setPlayers(e.target.value)}
+            onChange={e => props.setMages(e.target.value)}
           >
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>
             <option value='4'>4</option>
           </select>{' '}
-          number of players
+          number of mages
         </label>
       </p>
       <p>

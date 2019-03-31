@@ -32,7 +32,7 @@ const Form = () => {
   const [pmDF, setPMDF] = useState(false)
   const [selected, setSelected] = useState(Markets[0].name)
   const [market, setMarket] = useState(Markets[0])
-  const [players, setPlayers] = useState(4)
+  const [mages, setMages] = useState(4)
   const [minNem, setMinNem] = useState(1)
   const [maxNem, setMaxNem] = useState(10)
 
@@ -99,8 +99,8 @@ const Form = () => {
       </div>
       <div className='column'>
         <Combatants
-          players={players}
-          setPlayers={setPlayers}
+          mages={mages}
+          setMages={setMages}
           minNem={minNem}
           setMinNem={setMinNem}
           maxNem={maxNem}

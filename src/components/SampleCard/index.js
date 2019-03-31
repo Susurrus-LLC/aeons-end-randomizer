@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './card.sass'
+import './sample-card.sass'
 
-const Card = props => {
+const SampleCard = props => {
   const card = JSON.parse(props.card)
 
   const cost = () => {
@@ -10,22 +10,22 @@ const Card = props => {
       case 'any':
         return card.comp
       case '=':
-        return card.cost
+        return `${card.cost}æ`
       case '><':
-        return `${card.cost}/${card.costHigh}`
+        return `${card.cost}/${card.costHigh}æ`
       case '<=':
-        return `≤${card.cost}`
+        return `≤${card.cost}æ`
       case '>=':
-        return `≥${card.cost}`
+        return `≥${card.cost}æ`
       default:
-        return card.comp + card.cost
+        return `${card.comp}${card.cost}æ`
     }
   }
 
   return (
     <div
       id={`card-${props.index}`}
-      className={card.type ? `card ${card.type}` : 'card'}
+      className={card.type ? `sample-card ${card.type}` : 'sample-card'}
     >
       <p className='card-text card-type'>{card.type}</p>
       <p className='card-text card-cost'>{cost()}</p>
@@ -33,4 +33,4 @@ const Card = props => {
   )
 }
 
-export default Card
+export default SampleCard
