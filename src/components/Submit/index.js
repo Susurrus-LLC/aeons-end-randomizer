@@ -7,6 +7,7 @@ const Submit = props => {
     e.preventDefault()
     props.randomize()
   }
+
   return (
     <div className='submit'>
       <button
