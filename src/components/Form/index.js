@@ -5,6 +5,7 @@ import Markets from '../../data/marketTemplates.json'
 import Sets from '../Sets'
 import MarketSetup from '../MarketSetup'
 import Combatants from '../Combatants'
+import Submit from '../Submit'
 
 import './form.sass'
 
@@ -35,6 +36,10 @@ const Form = () => {
   const [mages, setMages] = useState(4)
   const [minNem, setMinNem] = useState(1)
   const [maxNem, setMaxNem] = useState(10)
+
+  const randomize = () => {
+    return true
+  }
 
   return (
     <form
@@ -105,6 +110,9 @@ const Form = () => {
           setMinNem={setMinNem}
           maxNem={maxNem}
           setMaxNem={setMaxNem}
+        />
+        <Submit
+          randomize={randomize}
         />
       </div>
     </form>
