@@ -9,8 +9,11 @@ import './results.sass'
 const Results = props => {
   const [setsArr, setSetsArr] = useState([])
   const [availGems, setAvailGems] = useState([])
+  const [selectedGems, setSelectedGems] = useState([])
   const [availRelics, setAvailRelics] = useState([])
+  const [selectedRelics, setSelectedRelics] = useState([])
   const [availSpells, setAvailSpells] = useState([])
+  const [selectedSpells, setSelectedSpells] = useState([])
   const [availMages, setAvailMages] = useState([])
   const [selectedMages, setSelectedMages] = useState([])
   const [availNems, setAvailNems] = useState([])
@@ -138,15 +141,69 @@ const Results = props => {
     }
   }
 
+  useEffect(() => {
+    if (availGems.length > 0) {
+      let count = 0
+
+      for (let i = 1; i <= 9; i++) {
+        if (props.data.market[`card${i}`].type === 'gem') {
+          count++
+        }
+      }
+
+      setSelectedGems(randUnique(availGems, count))
+    }
+  }, [availGems])
+
+  useEffect(() => {
+    if (availRelics.length > 0) {
+      let count = 0
+
+      for (let i = 1; i <= 9; i++) {
+        if (props.data.market[`card${i}`].type === 'relic') {
+          count++
+        }
+      }
+
+      setSelectedRelics(randUnique(availRelics, count))
+    }
+  }, [availRelics])
+
+  useEffect(() => {
+    if (availSpells.length > 0) {
+      let count = 0
+
+      for (let i = 1; i <= 9; i++) {
+        if (props.data.market[`card${i}`].type === 'spell') {
+          count++
+        }
+      }
+
+      setSelectedSpells(randUnique(availSpells, count))
+    }
+  }, [availSpells])
+
+  const marketList = () => {
+    if (selectedGems.length > 0 || selectedRelics.length > 0 || selectedSpells.length > 0) {
+      const marketArr = [].concat(selectedGems, selectedRelics, selectedSpells)
+      return (
+        <React.Fragment>
+          <h2>Market</h2>
+          <ul className='market-list'>
+            {marketArr.map((item, i) => (
+              <li className='market-item' key={i}>{item.name} ({item.type}) ({item.cost} Æ)</li>
+            ))}
+          </ul>
+        </React.Fragment>
+      )
+    }
+  }
+
   return (
     <div className='results'>
       {magesList()}
       {nemText()}
-      <p>{JSON.stringify(setsArr)}</p>
-      <p>{JSON.stringify(availGems)}</p>
-      <p>{JSON.stringify(availRelics)}</p>
-      <p>{JSON.stringify(availSpells)}</p>
-      <p>{props.data ? JSON.stringify(props.data.market) : null}</p>
+      {marketList()}
     </div>
   )
 }
