@@ -1,44 +1,5 @@
 [
   {
-    "name": "Random Setup",
-    "card1": {
-      "type": "gem",
-      "comp": "any"
-    },
-    "card2": {
-      "type": "gem",
-      "comp": "any"
-    },
-    "card3": {
-      "type": "gem",
-      "comp": "any"
-    },
-    "card4": {
-      "type": "relic",
-      "comp": "any"
-    },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
-    },
-    "card6": {
-      "type": "spell",
-      "comp": "any"
-    },
-    "card7": {
-      "type": "spell",
-      "comp": "any"
-    },
-    "card8": {
-      "type": "spell",
-      "comp": "any"
-    },
-    "card9": {
-      "type": "spell",
-      "comp": "any"
-    }
-  },
-  {
   "name": "Balanced Setup",
     "card1": {
       "type": "gem",
@@ -364,6 +325,45 @@
       "type": "spell",
       "comp": ">",
       "cost": 6
+    }
+  },
+  {
+    "name": "Random Setup",
+    "card1": {
+      "type": "gem",
+      "comp": "any"
+    },
+    "card2": {
+      "type": "gem",
+      "comp": "any"
+    },
+    "card3": {
+      "type": "gem",
+      "comp": "any"
+    },
+    "card4": {
+      "type": "relic",
+      "comp": "any"
+    },
+    "card5": {
+      "type": "relic",
+      "comp": "any"
+    },
+    "card6": {
+      "type": "spell",
+      "comp": "any"
+    },
+    "card7": {
+      "type": "spell",
+      "comp": "any"
+    },
+    "card8": {
+      "type": "spell",
+      "comp": "any"
+    },
+    "card9": {
+      "type": "spell",
+      "comp": "any"
     }
   }
 ]
