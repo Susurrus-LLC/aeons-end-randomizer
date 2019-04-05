@@ -14,6 +14,7 @@ const Results = props => {
   const [availMages, setAvailMages] = useState([])
   const [selectedMages, setSelectedMages] = useState([])
   const [availNems, setAvailNems] = useState([])
+  const [selectedNems, setSelectedNems] = useState([])
 
   const randUnique = (list, num) => {
     let newList = list
@@ -93,25 +94,58 @@ const Results = props => {
   const magesList = () => {
     if (selectedMages.length > 0) {
       return (
-        <ul className='mages-list'>
-          {selectedMages.map((item, i) => (
-            <li className='mage' key={i}>{item.mage}</li>
-          ))}
-        </ul>
+        <React.Fragment>
+          <h2>Mages</h2>
+          <ul className='mages-list'>
+            {selectedMages.map((item, i) => (
+              <li className='mage' key={i}>{item.mage}</li>
+            ))}
+          </ul>
+        </React.Fragment>
       )
+    }
+  }
+
+  useEffect(() => {
+    if (availNems.length > 0) {
+      setSelectedNems(randUnique(availNems, 1))
+    }
+  }, [availNems])
+
+  const nemText = () => {
+    if (props.data) {
+      if (availNems.length > 0) {
+        if (selectedNems.length > 0) {
+          return (
+            <React.Fragment>
+              <h2>Nemesis</h2>
+              <p className='nemesis'>
+                {`${selectedNems[0].nemesis} (difficulty ${selectedNems[0].difficulty})`}
+              </p>
+            </React.Fragment>
+          )
+        }
+      } else {
+        return (
+          <React.Fragment>
+            <h2>Nemesis</h2>
+            <p className='nemesis'>
+              No nemeses match the selected difficulty range.
+            </p>
+          </React.Fragment>
+        )
+      }
     }
   }
 
   return (
     <div className='results'>
-      <h2>Mages</h2>
       {magesList()}
-      <h2>Nemesis</h2>
+      {nemText()}
       <p>{JSON.stringify(setsArr)}</p>
       <p>{JSON.stringify(availGems)}</p>
       <p>{JSON.stringify(availRelics)}</p>
       <p>{JSON.stringify(availSpells)}</p>
-      <p>{JSON.stringify(availNems)}</p>
       <p>{props.data ? JSON.stringify(props.data.market) : null}</p>
     </div>
   )
