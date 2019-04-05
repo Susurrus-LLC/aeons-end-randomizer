@@ -37,7 +37,15 @@ const Form = props => {
   const [minNem, setMinNem] = useState(1)
   const [maxNem, setMaxNem] = useState(10)
 
-  const randomize = () => props.setData({ ae, td, tn, we, tv, od, lg, lgb, lgg, lgo, lgy, bs, na, sd, ta, iw, pmES, pmFV, pmTS, pmSM, pmDF, selected, market, mages, minNem, maxNem })
+  const randomize = () => props.setData({
+    sets: { ae, td, tn, we, tv, od, lg, lgb, lgg, lgo, lgy, bs, na, sd, ta, iw, pmES, pmFV, pmTS, pmSM, pmDF },
+    market,
+    mages,
+    nemesis: {
+      minNem,
+      maxNem
+    }
+  })
 
   return (
     <form
