@@ -19,23 +19,35 @@ const Results = props => {
   const [availNems, setAvailNems] = useState([])
   const [selectedNems, setSelectedNems] = useState([])
 
-  const randUnique = (list, criteria) => {
+  const randUnique = (list, criteria, exclude) => {
     let newList = []
     let selArr = []
     let num = criteria.length
 
-    for (let i = 0; i < criteria.length; i++) {
-      switch (criteria[i]) {
-        default:
-          newList = list
+    if (criteria && criteria.length > 0) {
+      for (let i = 0; i < criteria.length; i++) {
+        switch (criteria[i]) {
+          default:
+            newList = list
+        }
       }
     }
+
+    if (exclude && exclude.length > 0) {
+      for (let i = 0; i < list.length; i++) {
+        if (exclude.indexOf(newList[i]) > -1) {
+          newList.splice(i, 1)
+        }
+      }
+    }
+
     while (num > 0 && newList.length > 0) {
       const rand = Math.floor(Math.random() * list.length)
       selArr.push(list[rand])
       newList.splice(rand, 1)
       num--
     }
+
     return selArr
   }
 
@@ -98,11 +110,7 @@ const Results = props => {
 
   useEffect(() => {
     if (availMages.length > 0) {
-      let criteria = []
-      for (let i = 0; i < props.data.mages; i++) {
-        criteria.push('any')
-      }
-      setSelectedMages(randUnique(availMages, criteria))
+      setSelectedMages(randUnique(availMages))
     }
   }, [availMages])
 
@@ -123,7 +131,7 @@ const Results = props => {
 
   useEffect(() => {
     if (availNems.length > 0) {
-      setSelectedNems(randUnique(availNems, ['any']))
+      setSelectedNems(randUnique(availNems))
     }
   }, [availNems])
 
