@@ -238,7 +238,6 @@ const Sets = props => (
                 value='PMES'
                 checked={props.pmES}
                 onChange={() => props.setPMES(!props.pmES)}
-                disabled
               />{' '}
               Echo Stone
             </label>
@@ -252,7 +251,6 @@ const Sets = props => (
                 value='PMFV'
                 checked={props.pmFV}
                 onChange={() => props.setPMFV(!props.pmFV)}
-                disabled
               />{' '}
               Fleeting Vision
             </label>
@@ -266,7 +264,6 @@ const Sets = props => (
                 value='PMTS'
                 checked={props.pmTS}
                 onChange={() => props.setPMTS(!props.pmTS)}
-                disabled
               />{' '}
               Thieving Spirit
             </label>
@@ -280,7 +277,6 @@ const Sets = props => (
                 value='PMSM'
                 checked={props.pmSM}
                 onChange={() => props.setPMSM(!props.pmSM)}
-                disabled
               />{' '}
               Splinter Missile
             </label>
@@ -294,7 +290,6 @@ const Sets = props => (
                 value='PMDF'
                 checked={props.pmDF}
                 onChange={() => props.setPMDF(!props.pmDF)}
-                disabled
               />{' '}
               Drown in Flames
             </label>
