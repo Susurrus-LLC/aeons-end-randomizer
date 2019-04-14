@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import SampleCard from './'
+import cards from '../../../../../data/cards.json'
 
-describe('App', () => {
+describe('Sample Card', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<App />, div)
+    ReactDOM.render(<SampleCard card={JSON.stringify(cards[0])} />, div)
     ReactDOM.unmountComponentAtNode(div)
   })
 })
