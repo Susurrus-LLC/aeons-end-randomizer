@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-import Markets from '../../data/marketTemplates.json'
+import Markets from '../../../data/marketTemplates.json'
 
-import Sets from '../Sets'
-import MarketSetup from '../MarketSetup'
-import Combatants from '../Combatants'
-import Submit from '../Submit'
+import Sets from './Sets'
+import MarketSetup from './MarketSetup'
+import Combatants from './Combatants'
+import Submit from './Submit'
 
 import './form.sass'
 

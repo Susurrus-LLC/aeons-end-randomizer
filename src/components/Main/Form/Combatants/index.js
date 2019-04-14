@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './combatants.sass'
-
 const Combatants = props => {
   const disableMin = val => {
     return val < props.minNem ? 'disabled' : false

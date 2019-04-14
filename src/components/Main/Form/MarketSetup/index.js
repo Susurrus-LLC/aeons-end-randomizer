@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import SampleCard from '../SampleCard'
+import SampleCard from './SampleCard'
 
 import './marketsetup.sass'
 

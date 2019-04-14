@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import Form from '../Form'
-import Results from '../Results'
+import Form from './Form'
+import Results from './Results'
 
 import './main.sass'
 

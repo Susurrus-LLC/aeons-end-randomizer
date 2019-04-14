@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-import cards from '../../data/cards.json'
-import allMages from '../../data/mages.json'
-import nemeses from '../../data/nemeses.json'
+import cards from '../../../data/cards.json'
+import allMages from '../../../data/mages.json'
+import nemeses from '../../../data/nemeses.json'
 
 import './results.sass'
 

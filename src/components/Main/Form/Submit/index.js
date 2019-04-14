@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './submit.sass'
-
 const Submit = props => {
   const handleClick = e => {
     e.preventDefault()
