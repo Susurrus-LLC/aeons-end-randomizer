@@ -24,7 +24,7 @@ const Results = props => {
     let selArr = []
     let num = criteria.length
 
-    if (criteria && criteria.length > 0) {
+    if (criteria.length > 0) {
       for (let i = 0; i < criteria.length; i++) {
         switch (criteria[i]) {
           default:
@@ -110,7 +110,14 @@ const Results = props => {
 
   useEffect(() => {
     if (availMages.length > 0) {
-      setSelectedMages(randUnique(availMages))
+      const numMages = props.data.mages
+      let criteria = []
+
+      for (let i = 0; i < numMages; i++) {
+        criteria.push('any')
+      }
+
+      setSelectedMages(randUnique(availMages, criteria))
     }
   }, [availMages])
 
@@ -131,7 +138,7 @@ const Results = props => {
 
   useEffect(() => {
     if (availNems.length > 0) {
-      setSelectedNems(randUnique(availNems))
+      setSelectedNems(randUnique(availNems, ['any']))
     }
   }, [availNems])
 
