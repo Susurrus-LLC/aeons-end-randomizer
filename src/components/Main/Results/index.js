@@ -168,19 +168,20 @@ const Results = props => {
     }
   }
 
-  const countCards = (type) => {
-    let counter = 0
+  const listCriteria = (type) => {
+    let list = []
     for (let i = 1; i <= 9; i++) {
       if (props.data.market[`card${i}`].type === type) {
-        counter++
+        list.push(props.data.market[`card${i}`])
       }
     }
-    return counter
+    return list
   }
 
   useEffect(() => {
     if (availGems.length > 0) {
-      const numGems = countCards('gem')
+      const criteriaList = listCriteria('gem')
+      const numGems = criteriaList.length
       let criteria = []
       for (let i = 0; i < numGems; i++) {
         criteria.push('any')
@@ -188,9 +189,12 @@ const Results = props => {
 
       setSelectedGems(randUnique(availGems, criteria))
     }
+  }, [availGems])
 
+  useEffect(() => {
     if (availRelics.length > 0) {
-      const numRelics = countCards('relic')
+      const criteriaList = listCriteria('relic')
+      const numRelics = criteriaList.length
       let criteria = []
       for (let i = 0; i < numRelics; i++) {
         criteria.push('any')
@@ -198,9 +202,12 @@ const Results = props => {
 
       setSelectedRelics(randUnique(availRelics, criteria))
     }
+  }, [availRelics])
 
+  useEffect(() => {
     if (availSpells.length > 0) {
-      const numSpells = countCards('spell')
+      const criteriaList = listCriteria('spell')
+      const numSpells = criteriaList.length
       let criteria = []
       for (let i = 0; i < numSpells; i++) {
         criteria.push('any')
@@ -208,7 +215,7 @@ const Results = props => {
 
       setSelectedSpells(randUnique(availSpells, criteria))
     }
-  }, [availGems, availRelics, availSpells])
+  }, [availSpells])
 
   const marketList = () => {
     if (selectedGems.length > 0 || selectedRelics.length > 0 || selectedSpells.length > 0) {
