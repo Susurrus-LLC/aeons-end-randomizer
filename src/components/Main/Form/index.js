@@ -17,10 +17,6 @@ const Form = props => {
   const [tv, setTV] = useState(false)
   const [od, setOD] = useState(false)
   const [lg, setLG] = useState(false)
-  const [lgb, setLGB] = useState(false)
-  const [lgg, setLGG] = useState(false)
-  const [lgo, setLGO] = useState(false)
-  const [lgy, setLGY] = useState(false)
   const [bs, setBS] = useState(false)
   const [na, setNA] = useState(false)
   const [sd, setSD] = useState(false)
@@ -38,7 +34,7 @@ const Form = props => {
   const [maxNem, setMaxNem] = useState(10)
 
   const randomize = () => props.setData({
-    sets: { ae, td, tn, we, tv, od, lg, lgb, lgg, lgo, lgy, bs, na, sd, ta, iw, pmES, pmFV, pmTS, pmSM, pmDF },
+    sets: { ae, td, tn, we, tv, od, lg, bs, na, sd, ta, iw, pmES, pmFV, pmTS, pmSM, pmDF },
     market,
     mages,
     nemesis: {
@@ -69,14 +65,6 @@ const Form = props => {
           setOD={setOD}
           lg={lg}
           setLG={setLG}
-          lgb={lgb}
-          setLGB={setLGB}
-          lgg={lgg}
-          setLGG={setLGG}
-          lgo={lgo}
-          setLGO={setLGO}
-          lgy={lgy}
-          setLGY={setLGY}
           bs={bs}
           setBS={setBS}
           na={na}

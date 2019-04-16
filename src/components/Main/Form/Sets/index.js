@@ -96,67 +96,6 @@ const Sets = props => (
           Legacy
         </label>
       </li>
-      <li>
-        <ul className='next-level'>
-          <li>Mages</li>
-          <li>
-            <ul className='next-level'>
-              <li>
-                <label htmlFor='LGB'>
-                  <input
-                    type='checkbox'
-                    id='LGB'
-                    name='LGB'
-                    value='LGB'
-                    checked={props.lgb}
-                    onChange={() => props.setLGB(!props.lgb)}
-                  />{' '}
-                  Blue Mage
-                </label>
-              </li>
-              <li>
-                <label htmlFor='LGG' className='legacy-mages'>
-                  <input
-                    type='checkbox'
-                    id='LGG'
-                    name='LGG'
-                    value='LGG'
-                    checked={props.lgg}
-                    onChange={() => props.setLGG(!props.lgg)}
-                  />{' '}
-                  Green Mage
-                </label>
-              </li>
-              <li>
-                <label htmlFor='LGO' className='legacy-mages'>
-                  <input
-                    type='checkbox'
-                    id='LGO'
-                    name='LGO'
-                    value='LGO'
-                    checked={props.lgo}
-                    onChange={() => props.setLGO(!props.lgo)}
-                  />{' '}
-                  Orange Mage
-                </label>
-              </li>
-              <li>
-                <label htmlFor='LGY' className='legacy-mages'>
-                  <input
-                    type='checkbox'
-                    id='LGY'
-                    name='LGY'
-                    value='LGY'
-                    checked={props.lgy}
-                    onChange={() => props.setLGY(!props.lgy)}
-                  />{' '}
-                  Yellow Mage
-                </label>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
       <li className='expansion'>
         <label htmlFor='BS'>
           <input
