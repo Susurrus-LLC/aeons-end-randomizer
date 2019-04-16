@@ -2,8 +2,18 @@
 
 .results
   width: 100%
-  padding-top: $ms4 * 1rem
-  min-height: $ms8 * 1rem
+  min-height: $lnht * 1rem
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: baseline
+  align-content: space-between
+
+  .column
+    width: 100%
+    max-width: (1 / 3) * 100%
+    padding: 0 $msa0 * 1rem
 
   .cost
     font-variant: small-caps

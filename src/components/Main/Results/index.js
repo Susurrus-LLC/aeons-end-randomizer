@@ -209,47 +209,15 @@ const Results = props => {
   const magesList = () => {
     if (selectedMages.length > 0) {
       return (
-        <React.Fragment>
+        <div className='column'>
           <h2>Mages</h2>
           <ul className='mages-list'>
             {selectedMages.map((item, i) => (
               <li className='mage' key={i}>{item.mage}</li>
             ))}
           </ul>
-        </React.Fragment>
+        </div>
       )
-    }
-  }
-
-  useEffect(() => {
-    if (availNems.length > 0) {
-      setSelectedNems(randUnique(availNems, [{ comp: 'any' }]))
-    }
-  }, [availNems])
-
-  const nemText = () => {
-    if (props.data) {
-      if (availNems.length > 0) {
-        if (selectedNems.length > 0) {
-          return (
-            <React.Fragment>
-              <h2>Nemesis</h2>
-              <p className='nemesis'>
-                {`${selectedNems[0].nemesis} (difficulty ${selectedNems[0].difficulty})`}
-              </p>
-            </React.Fragment>
-          )
-        }
-      } else {
-        return (
-          <React.Fragment>
-            <h2>Nemesis</h2>
-            <p className='nemesis'>
-              No nemeses match the selected difficulty range.
-            </p>
-          </React.Fragment>
-        )
-      }
     }
   }
 
@@ -288,15 +256,47 @@ const Results = props => {
     if (selectedGems.length > 0 || selectedRelics.length > 0 || selectedSpells.length > 0) {
       const marketArr = [].concat(selectedGems, selectedRelics, selectedSpells)
       return (
-        <React.Fragment>
+        <div className='column'>
           <h2>Market</h2>
           <ul className='market-list'>
             {marketArr.map((item, i) => (
               <li className='market-item' key={i}>{item.name} ({item.type}) (<span className='cost'>{item.cost}æ</span>)</li>
             ))}
           </ul>
-        </React.Fragment>
+        </div>
       )
+    }
+  }
+
+  useEffect(() => {
+    if (availNems.length > 0) {
+      setSelectedNems(randUnique(availNems, [{ comp: 'any' }]))
+    }
+  }, [availNems])
+
+  const nemText = () => {
+    if (props.data) {
+      if (availNems.length > 0) {
+        if (selectedNems.length > 0) {
+          return (
+            <div className='column'>
+              <h2>Nemesis</h2>
+              <p className='nemesis'>
+                {`${selectedNems[0].nemesis} (difficulty ${selectedNems[0].difficulty})`}
+              </p>
+            </div>
+          )
+        }
+      } else {
+        return (
+          <div className='column'>
+            <h2>Nemesis</h2>
+            <p className='nemesis'>
+              No nemeses match the selected difficulty range.
+            </p>
+          </div>
+        )
+      }
     }
   }
 
@@ -304,8 +304,8 @@ const Results = props => {
     <div className='results'>
       {noBases()}
       {magesList()}
-      {nemText()}
       {marketList()}
+      {nemText()}
     </div>
   )
 }
