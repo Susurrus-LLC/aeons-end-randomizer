@@ -7,6 +7,7 @@ import nemeses from '../../../data/nemeses.json'
 import './results.sass'
 
 const Results = props => {
+  const [noBase, setNoBase] = useState(false)
   const [setsArr, setSetsArr] = useState([])
   const [availGems, setAvailGems] = useState([])
   const [selectedGems, setSelectedGems] = useState([])
@@ -119,9 +120,32 @@ const Results = props => {
           newArr.push(key.toUpperCase())
         }
       })
-      setSetsArr(newArr)
+
+      if (newArr.indexOf('AE') > -1 || newArr.indexOf('WE') > -1 || newArr.indexOf('LG') > -1 || newArr.indexOf('NA') > -1) {
+        setNoBase(false)
+        setSetsArr(newArr)
+      } else {
+        setNoBase(true)
+        setSelectedGems([])
+        setSelectedRelics([])
+        setSelectedSpells([])
+        setSelectedMages([])
+        setSelectedNems([])
+      }
     }
   }, [props.data])
+
+  const noBases = () => {
+    if (noBase) {
+      return (
+        <React.Fragment>
+          <p className='error'>
+            You must select at least one base game.
+          </p>
+        </React.Fragment>
+      )
+    }
+  }
 
   // Create arrays of available cards, mages, and nemeses any time the selected sets are changed
   useEffect(() => {
@@ -278,6 +302,7 @@ const Results = props => {
 
   return (
     <div className='results'>
+      {noBases()}
       {magesList()}
       {nemText()}
       {marketList()}
