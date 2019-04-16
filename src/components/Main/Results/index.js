@@ -19,38 +19,97 @@ const Results = props => {
   const [availNems, setAvailNems] = useState([])
   const [selectedNems, setSelectedNems] = useState([])
 
+  // Randomly select from a list without duplicates
   const randUnique = (list, criteria, exclude) => {
-    let newList = []
-    let selArr = []
-    let num = criteria.length
-
-    if (criteria.length > 0) {
-      for (let i = 0; i < criteria.length; i++) {
-        switch (criteria[i]) {
-          default:
-            newList = list
-        }
+    const isValid = (item, cri) => {
+      switch (cri.comp) {
+        case 'any':
+          return true
+        case '=':
+          if (item.cost === cri.cost) {
+            return true
+          }
+          break
+        case '<':
+          if (item.cost < cri.cost) {
+            return true
+          }
+          break
+        case '>':
+          if (item.cost > cri.cost) {
+            return true
+          }
+          break
+        case '<=':
+          if (item.cost <= cri.cost) {
+            return true
+          }
+          break
+        case '>=':
+          if (item.cost >= cri.cost) {
+            return true
+          }
+          break
+        case '><':
+          if (item.cost >= cri.cost && item.cost <= cri.costHigh) {
+            return true
+          }
+          break
+        default:
+          return false
       }
     }
 
+    let newList = []
+    let selArr = []
+
+    if (criteria.length > 0) {
+      list.forEach(item => {
+        let valid = false
+        let i = 0
+
+        while (!valid && i < criteria.length) {
+          valid = isValid(item, criteria[i])
+          i++
+        }
+
+        if (valid) {
+          newList.push(item)
+        }
+      })
+    }
+
     if (exclude && exclude.length > 0) {
-      for (let i = 0; i < list.length; i++) {
+      for (let i = 0; i < newList.length; i++) {
         if (exclude.indexOf(newList[i]) > -1) {
           newList.splice(i, 1)
         }
       }
     }
 
-    while (num > 0 && newList.length > 0) {
-      const rand = Math.floor(Math.random() * list.length)
-      selArr.push(list[rand])
-      newList.splice(rand, 1)
-      num--
-    }
+    const selectRand = length => Math.floor(Math.random() * length)
+
+    criteria.forEach(item => {
+      if (newList.length > 0) {
+        let valid = false
+        let rand = selectRand(newList.length)
+
+        while (!valid) {
+          rand = selectRand(newList.length)
+          valid = isValid(newList[rand], item)
+        }
+
+        if (valid) {
+          selArr.push(newList[rand])
+          newList.splice(rand, 1)
+        }
+      }
+    })
 
     return selArr
   }
 
+  // Create an array of game sets any time data changes
   useEffect(() => {
     if (props.data) {
       let newArr = []
@@ -64,6 +123,7 @@ const Results = props => {
     }
   }, [props.data])
 
+  // Create arrays of available cards, mages, and nemeses any time the selected sets are changed
   useEffect(() => {
     if (setsArr.length > 0) {
       let newGemArr = []
@@ -108,13 +168,14 @@ const Results = props => {
     }
   }, [setsArr])
 
+  // Select mages any time the list of available mages changes or the Randomize button is pushed
   useEffect(() => {
     if (availMages.length > 0) {
       const numMages = props.data.mages
       let criteria = []
 
       for (let i = 0; i < numMages; i++) {
-        criteria.push('any')
+        criteria.push({ comp: 'any' })
       }
 
       setSelectedMages(randUnique(availMages, criteria))
@@ -138,7 +199,7 @@ const Results = props => {
 
   useEffect(() => {
     if (availNems.length > 0) {
-      setSelectedNems(randUnique(availNems, ['any']))
+      setSelectedNems(randUnique(availNems, [{ comp: 'any' }]))
     }
   }, [availNems])
 
@@ -180,39 +241,21 @@ const Results = props => {
 
   useEffect(() => {
     if (availGems.length > 0) {
-      const criteriaList = listCriteria('gem')
-      const numGems = criteriaList.length
-      let criteria = []
-      for (let i = 0; i < numGems; i++) {
-        criteria.push('any')
-      }
-
+      const criteria = listCriteria('gem')
       setSelectedGems(randUnique(availGems, criteria))
     }
   }, [availGems])
 
   useEffect(() => {
     if (availRelics.length > 0) {
-      const criteriaList = listCriteria('relic')
-      const numRelics = criteriaList.length
-      let criteria = []
-      for (let i = 0; i < numRelics; i++) {
-        criteria.push('any')
-      }
-
+      const criteria = listCriteria('relic')
       setSelectedRelics(randUnique(availRelics, criteria))
     }
   }, [availRelics])
 
   useEffect(() => {
     if (availSpells.length > 0) {
-      const criteriaList = listCriteria('spell')
-      const numSpells = criteriaList.length
-      let criteria = []
-      for (let i = 0; i < numSpells; i++) {
-        criteria.push('any')
-      }
-
+      const criteria = listCriteria('spell')
       setSelectedSpells(randUnique(availSpells, criteria))
     }
   }, [availSpells])
