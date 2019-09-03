@@ -190,6 +190,7 @@ const Results = props => {
       })
       setAvailNems(newNemsArr)
     }
+    // eslint-disable-next-line
   }, [setsArr])
 
   // Select mages any time the list of available mages changes or the Randomize button is pushed
@@ -204,6 +205,7 @@ const Results = props => {
 
       setSelectedMages(randUnique(availMages, criteria))
     }
+    // eslint-disable-next-line
   }, [availMages])
 
   const magesList = () => {
@@ -236,6 +238,7 @@ const Results = props => {
       const criteria = listCriteria('gem')
       setSelectedGems(randUnique(availGems, criteria))
     }
+    // eslint-disable-next-line
   }, [availGems])
 
   useEffect(() => {
@@ -243,6 +246,7 @@ const Results = props => {
       const criteria = listCriteria('relic')
       setSelectedRelics(randUnique(availRelics, criteria))
     }
+    // eslint-disable-next-line
   }, [availRelics])
 
   useEffect(() => {
@@ -250,6 +254,7 @@ const Results = props => {
       const criteria = listCriteria('spell')
       setSelectedSpells(randUnique(availSpells, criteria))
     }
+    // eslint-disable-next-line
   }, [availSpells])
 
   const marketList = () => {
