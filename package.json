@@ -25,7 +25,7 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^2.2.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "standard": "^14.3.1"
   },
   "eslintConfig": {
