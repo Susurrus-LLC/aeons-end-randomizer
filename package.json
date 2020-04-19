@@ -2,13 +2,13 @@
   "name": "aeons-end-randomizer",
   "author": "Ian A. Cook",
   "license": "AGPL-3.0",
-  "homepage": "https://nai888.github.io/aeons-end-randomizer/",
+  "homepage": "https://susurrus-llc.github.io/aeons-end-randomizer/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nai888/aeons-end-randomizer.git"
+    "url": "https://github.com/Susurrus-LLC/aeons-end-randomizer.git"
   },
   "bugs": {
-    "url": "https://github.com/nai888/aeons-end-randomizer/issues"
+    "url": "https://github.com/Susurrus-LLC/aeons-end-randomizer/issues"
   },
   "version": "1.0.0",
   "private": true,
