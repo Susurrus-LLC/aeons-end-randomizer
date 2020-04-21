@@ -9,11 +9,10 @@ script:
 - yarn test
 - yarn build
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  provider: pages:git
+  token: $GITHUB_TOKEN
   local_dir: build
-  keep_history: true
+  edge: true #opt in dpl v2
   on:
     branch: master
 notifications:
