@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/aeons-end-randomizer/static/css/main.ec8a19c2.chunk.css",
+    "main.js": "/aeons-end-randomizer/static/js/main.8af56ef1.chunk.js",
+    "main.js.map": "/aeons-end-randomizer/static/js/main.8af56ef1.chunk.js.map",
+    "runtime-main.js": "/aeons-end-randomizer/static/js/runtime-main.9bd080ea.js",
+    "runtime-main.js.map": "/aeons-end-randomizer/static/js/runtime-main.9bd080ea.js.map",
+    "static/css/2.23ee5066.chunk.css": "/aeons-end-randomizer/static/css/2.23ee5066.chunk.css",
+    "static/js/2.73e5ef23.chunk.js": "/aeons-end-randomizer/static/js/2.73e5ef23.chunk.js",
+    "static/js/2.73e5ef23.chunk.js.map": "/aeons-end-randomizer/static/js/2.73e5ef23.chunk.js.map",
+    "index.html": "/aeons-end-randomizer/index.html",
+    "precache-manifest.65c0cf83997ac44edc8dd9095a0ea6e7.js": "/aeons-end-randomizer/precache-manifest.65c0cf83997ac44edc8dd9095a0ea6e7.js",
+    "service-worker.js": "/aeons-end-randomizer/service-worker.js",
+    "static/css/2.23ee5066.chunk.css.map": "/aeons-end-randomizer/static/css/2.23ee5066.chunk.css.map",
+    "static/css/main.ec8a19c2.chunk.css.map": "/aeons-end-randomizer/static/css/main.ec8a19c2.chunk.css.map",
+    "static/js/2.73e5ef23.chunk.js.LICENSE.txt": "/aeons-end-randomizer/static/js/2.73e5ef23.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bd080ea.js",
+    "static/css/2.23ee5066.chunk.css",
+    "static/js/2.73e5ef23.chunk.js",
+    "static/css/main.ec8a19c2.chunk.css",
+    "static/js/main.8af56ef1.chunk.js"
+  ]
+}
