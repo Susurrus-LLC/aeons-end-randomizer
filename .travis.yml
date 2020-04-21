@@ -9,7 +9,7 @@ script:
 - yarn test
 - yarn build
 deploy:
-  provider: pages:git
+  provider: pages
   token: $GITHUB_TOKEN
   local_dir: build
   edge: true #opt in dpl v2
