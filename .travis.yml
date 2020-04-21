@@ -12,6 +12,7 @@ deploy:
   provider: pages
   token: $GITHUB_TOKEN
   local_dir: build
+  keep_history: false
   edge: true #opt in dpl v2
   on:
     branch: master
