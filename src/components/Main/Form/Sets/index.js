@@ -118,7 +118,6 @@ const Sets = props => (
             value='NA'
             checked={props.na}
             onChange={() => props.setNA(!props.na)}
-            disabled
           />{' '}
           The New Age
         </label>
@@ -132,7 +131,6 @@ const Sets = props => (
             value='SD'
             checked={props.sd}
             onChange={() => props.setSD(!props.sd)}
-            disabled
           />{' '}
           Shattered Dreams
         </label>
@@ -146,7 +144,6 @@ const Sets = props => (
             value='TA'
             checked={props.ta}
             onChange={() => props.setTA(!props.ta)}
-            disabled
           />{' '}
           The Ancients
         </label>
@@ -160,7 +157,6 @@ const Sets = props => (
             value='IW'
             checked={props.iw}
             onChange={() => props.setIW(!props.iw)}
-            disabled
           />{' '}
           Into the Wild
         </label>
@@ -179,6 +175,45 @@ const Sets = props => (
                 onChange={() => props.setPMES(!props.pmES)}
               />{' '}
               Echo Stone
+            </label>
+          </li>
+          <li>
+            <label htmlFor='PMFQ'>
+              <input
+                type='checkbox'
+                id='PMFQ'
+                name='PMFQ'
+                value='PMFQ'
+                checked={props.pmFQ}
+                onChange={() => props.setPMFQ(!props.pmFQ)}
+              />{' '}
+              Fractured Quartz
+            </label>
+          </li>
+          <li>
+            <label htmlFor='PMRL'>
+              <input
+                type='checkbox'
+                id='PMRL'
+                name='PMRL'
+                value='PMRL'
+                checked={props.pmRL}
+                onChange={() => props.setPMRL(!props.pmRL)}
+              />{' '}
+              Rock Launcher
+            </label>
+          </li>
+          <li>
+            <label htmlFor='PMAI'>
+              <input
+                type='checkbox'
+                id='PMAI'
+                name='PMAI'
+                value='PMAI'
+                checked={props.pmAI}
+                onChange={() => props.setPMAI(!props.pmAI)}
+              />{' '}
+              Abacus of Ignition
             </label>
           </li>
           <li>
@@ -231,6 +266,32 @@ const Sets = props => (
                 onChange={() => props.setPMDF(!props.pmDF)}
               />{' '}
               Drown in Flames
+            </label>
+          </li>
+          <li>
+            <label htmlFor='PMIF'>
+              <input
+                type='checkbox'
+                id='PMIF'
+                name='PMIF'
+                value='PMIF'
+                checked={props.pmIF}
+                onChange={() => props.setPMIF(!props.pmIF)}
+              />{' '}
+              Illuminating Flame
+            </label>
+          </li>
+          <li>
+            <label htmlFor='PMCA'>
+              <input
+                type='checkbox'
+                id='PMCA'
+                name='PMCA'
+                value='PMCA'
+                checked={props.pmCA}
+                onChange={() => props.setPMCA(!props.pmCA)}
+              />{' '}
+              Chronal Arc
             </label>
           </li>
         </ul>

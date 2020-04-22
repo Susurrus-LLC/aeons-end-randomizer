@@ -23,10 +23,15 @@ const Form = props => {
   const [ta, setTA] = useState(false)
   const [iw, setIW] = useState(false)
   const [pmES, setPMES] = useState(false)
+  const [pmFQ, setPMFQ] = useState(false)
+  const [pmRL, setPMRL] = useState(false)
+  const [pmAI, setPMAI] = useState(false)
   const [pmFV, setPMFV] = useState(false)
   const [pmTS, setPMTS] = useState(false)
   const [pmSM, setPMSM] = useState(false)
   const [pmDF, setPMDF] = useState(false)
+  const [pmIF, setPMIF] = useState(false)
+  const [pmCA, setPMCA] = useState(false)
   const [selected, setSelected] = useState(Markets[0].name)
   const [market, setMarket] = useState(Markets[0])
   const [mages, setMages] = useState(4)
@@ -34,7 +39,7 @@ const Form = props => {
   const [maxNem, setMaxNem] = useState(10)
 
   const randomize = () => props.setData({
-    sets: { ae, td, tn, we, tv, od, lg, bs, na, sd, ta, iw, pmES, pmFV, pmTS, pmSM, pmDF },
+    sets: { ae, td, tn, we, tv, od, lg, bs, na, sd, ta, iw, pmES, pmFQ, pmRL, pmAI, pmFV, pmTS, pmSM, pmDF, pmIF, pmCA },
     market,
     mages,
     nemesis: {
@@ -77,6 +82,12 @@ const Form = props => {
           setIW={setIW}
           pmES={pmES}
           setPMES={setPMES}
+          pmFQ={pmFQ}
+          setPMFQ={setPMFQ}
+          pmRL={pmRL}
+          setPMRL={setPMRL}
+          pmAI={pmAI}
+          setPMAI={setPMAI}
           pmFV={pmFV}
           setPMFV={setPMFV}
           pmTS={pmTS}
@@ -85,6 +96,10 @@ const Form = props => {
           setPMSM={setPMSM}
           pmDF={pmDF}
           setPMDF={setPMDF}
+          pmIF={pmIF}
+          setPMIF={setPMIF}
+          pmCA={pmCA}
+          setPMCA={setPMCA}
         />
       </div>
       <div className='column'>

@@ -882,9 +882,279 @@
     "cost": 9
   },
   {
+    "name": "Exogranite",
+    "type": "gem",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Recurring Jasper",
+    "type": "gem",
+    "set": "NA",
+    "cost": 4
+  },
+  {
+    "name": "Energized Rubidium",
+    "type": "gem",
+    "set": "NA",
+    "cost": 5
+  },
+  {
+    "name": "Galvanized Bauble",
+    "type": "relic",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Aether Conduit",
+    "type": "relic",
+    "set": "NA",
+    "cost": 4
+  },
+  {
+    "name": "Tethered Darts",
+    "type": "spell",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Force Amplifier",
+    "type": "spell",
+    "set": "NA",
+    "cost": 4
+  },
+  {
+    "name": "Imbued Smash",
+    "type": "spell",
+    "set": "NA",
+    "cost": 5
+  },
+  {
+    "name": "Patterned Strike",
+    "type": "spell",
+    "set": "NA",
+    "cost": 7
+  },
+  {
+    "name": "Resonant Pearl",
+    "type": "gem",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Caged Fire",
+    "type": "relic",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Well of Energy",
+    "type": "relic",
+    "set": "NA",
+    "cost": 7
+  },
+  {
+    "name": "Spirit Lift",
+    "type": "spell",
+    "set": "NA",
+    "cost": 8
+  },
+  {
+    "name": "Plain Conduit",
+    "type": "relic",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Fatal Harmony",
+    "type": "spell",
+    "set": "NA",
+    "cost": 5
+  },
+  {
+    "name": "Bouncing Boom",
+    "type": "spell",
+    "set": "NA",
+    "cost": 6
+  },
+  {
+    "name": "Unrefined Blaststone",
+    "type": "gem",
+    "set": "NA",
+    "cost": 6
+  },
+  {
+    "name": "Link Conduit",
+    "type": "relic",
+    "set": "NA",
+    "cost": 6
+  },
+  {
+    "name": "Reverberating Shock",
+    "type": "spell",
+    "set": "NA",
+    "cost": 4
+  },
+  {
+    "name": "Lurking Sionite",
+    "type": "gem",
+    "set": "NA",
+    "cost": 3
+  },
+  {
+    "name": "Marble Galaxy",
+    "type": "relic",
+    "set": "NA",
+    "cost": 2
+  },
+  {
+    "name": "Deluge of Power",
+    "type": "spell",
+    "set": "NA",
+    "cost": 6
+  },
+  {
+    "name": "Jeweled Brain",
+    "type": "gem",
+    "set": "IW",
+    "cost": 3
+  },
+  {
+    "name": "Blast Sphere",
+    "type": "relic",
+    "set": "IW",
+    "cost": 8
+  },
+  {
+    "name": "Wound Mender",
+    "type": "spell",
+    "set": "IW",
+    "cost": 8
+  },
+  {
+    "name": "Olivinite",
+    "type": "gem",
+    "set": "SD",
+    "cost": 3
+  },
+  {
+    "name": "Cache Glass",
+    "type": "gem",
+    "set": "SD",
+    "cost": 4
+  },
+  {
+    "name": "Reflective Conduit",
+    "type": "relic",
+    "set": "SD",
+    "cost": 3
+  },
+  {
+    "name": "Will Weaver",
+    "type": "relic",
+    "set": "SD",
+    "cost": 7
+  },
+  {
+    "name": "Breach Seeker",
+    "type": "spell",
+    "set": "SD",
+    "cost": 5
+  },
+  {
+    "name": "Crescendo Ray",
+    "type": "spell",
+    "set": "SD",
+    "cost": 4
+  },
+  {
+    "name": "Storm Vapors",
+    "type": "spell",
+    "set": "SD",
+    "cost": 4
+  },
+  {
+    "name": "Mantra of Strength",
+    "type": "spell",
+    "set": "SD",
+    "cost": 3
+  },
+  {
+    "name": "Embody Flame",
+    "type": "spell",
+    "set": "SD",
+    "cost": 7
+  },
+  {
+    "name": "Snap Ritual",
+    "type": "spell",
+    "set": "SD",
+    "cost": 6
+  },
+  {
+    "name": "Shining Fluorite",
+    "type": "gem",
+    "set": "TA",
+    "cost": 7
+  },
+  {
+    "name": "Polyphase Turbine",
+    "type": "relic",
+    "set": "TA",
+    "cost": 3
+  },
+  {
+    "name": "Breach Extractor",
+    "type": "relic",
+    "set": "TA",
+    "cost": 5
+  },
+  {
+    "name": "Focusing Conduit",
+    "type": "relic",
+    "set": "TA",
+    "cost": 5
+  },
+  {
+    "name": "Dual Flash",
+    "type": "spell",
+    "set": "TA",
+    "cost": 3
+  },
+  {
+    "name": "Dust Caller",
+    "type": "spell",
+    "set": "TA",
+    "cost": 5
+  },
+  {
+    "name": "Symbiotic Synapse",
+    "type": "spell",
+    "set": "TA",
+    "cost": 7
+  },
+  {
     "name": "Echo Stone",
     "type": "gem",
     "set": "PMES",
+    "cost": 4
+  },
+  {
+    "name": "Fractured Quartz",
+    "type": "gem",
+    "set": "PMFQ",
+    "cost": 4
+  },
+  {
+    "name": "Rock Launcher",
+    "type": "relic",
+    "set": "PMRL",
+    "cost": 3
+  },
+  {
+    "name": "Abacus of Ignition",
+    "type": "relic",
+    "set": "PMAI",
     "cost": 4
   },
   {
@@ -910,5 +1180,17 @@
     "type": "spell",
     "set": "PMDF",
     "cost": 6
+  },
+  {
+    "name": "Illuminating Flame",
+    "type": "spell",
+    "set": "PMIF",
+    "cost": 6
+  },
+  {
+    "name": "Chronal Arc",
+    "type": "spell",
+    "set": "PMCA",
+    "cost": 7
   }
 ]
