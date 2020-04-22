@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bafd2f7bba7d111116283e9eea31f6d9",
+    "revision": "6d8fea5a1f83660aa577140307de8a86",
     "url": "/aeons-end-randomizer/index.html"
   },
   {
-    "revision": "f9203bed4fbe196ebe63",
-    "url": "/aeons-end-randomizer/static/css/2.ae77d65d.chunk.css"
+    "revision": "250e42b25320496ee3b1",
+    "url": "/aeons-end-randomizer/static/css/2.23ee5066.chunk.css"
   },
   {
-    "revision": "b3db50e4763e8a667d9b",
-    "url": "/aeons-end-randomizer/static/css/main.e2223098.chunk.css"
+    "revision": "ca75cd88e29fcb12c480",
+    "url": "/aeons-end-randomizer/static/css/main.ec8a19c2.chunk.css"
   },
   {
-    "revision": "f9203bed4fbe196ebe63",
+    "revision": "250e42b25320496ee3b1",
     "url": "/aeons-end-randomizer/static/js/2.73e5ef23.chunk.js"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aeons-end-randomizer/static/js/2.73e5ef23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3db50e4763e8a667d9b",
-    "url": "/aeons-end-randomizer/static/js/main.4c2c165f.chunk.js"
+    "revision": "ca75cd88e29fcb12c480",
+    "url": "/aeons-end-randomizer/static/js/main.e1985284.chunk.js"
   },
   {
     "revision": "233868065e4283d763a9",
