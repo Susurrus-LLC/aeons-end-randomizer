@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "yarn deploy",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test"
   },
