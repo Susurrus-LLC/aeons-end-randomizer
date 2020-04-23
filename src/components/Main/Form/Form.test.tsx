@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Combatants from './'
 
-describe('Combatants', () => {
+import Form from '.'
+
+describe('Form', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<Combatants />, div)
+    ReactDOM.render(<Form />, div)
     ReactDOM.unmountComponentAtNode(div)
   })
 })

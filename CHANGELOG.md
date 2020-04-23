@@ -16,6 +16,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 ### Changed
 
 - Update dependencies.
+- Change to TypeScript
 
 ## [v1.0.0](https://github.com/Susurrus-LLC/aeons-end-randomizer/compare/2ed7218fc5ebb58f892be82e5731a7a3eee8f9d8...v1.0.0) - 2020-04-21
 

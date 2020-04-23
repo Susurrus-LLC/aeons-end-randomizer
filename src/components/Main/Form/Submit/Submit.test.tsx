@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Submit from './'
+
+import Submit from '.'
 
 describe('Submit', () => {
   it('renders without crashing', () => {

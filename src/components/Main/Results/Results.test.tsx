@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Main from './'
 
-describe('Main', () => {
+import Results from '.'
+
+describe('Results', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<Main />, div)
+    ReactDOM.render(<Results />, div)
     ReactDOM.unmountComponentAtNode(div)
   })
 })

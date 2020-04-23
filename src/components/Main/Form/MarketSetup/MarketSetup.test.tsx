@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MarketSetup from './'
+
+import MarketSetup from '.'
 import Markets from '../../../../data/marketTemplates.json'
 
 describe('Market Setup', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Submit = props => {
-  const handleClick = e => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
     props.randomize()
   }
