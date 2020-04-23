@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d8fea5a1f83660aa577140307de8a86",
+    "revision": "4d491731adfa9cf79c12953595dba47d",
     "url": "/aeons-end-randomizer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aeons-end-randomizer/static/css/2.23ee5066.chunk.css"
   },
   {
-    "revision": "ca75cd88e29fcb12c480",
+    "revision": "552e2d252b7bf30dff6b",
     "url": "/aeons-end-randomizer/static/css/main.ec8a19c2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aeons-end-randomizer/static/js/2.73e5ef23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ca75cd88e29fcb12c480",
-    "url": "/aeons-end-randomizer/static/js/main.e1985284.chunk.js"
+    "revision": "552e2d252b7bf30dff6b",
+    "url": "/aeons-end-randomizer/static/js/main.a5eba4e6.chunk.js"
   },
   {
     "revision": "233868065e4283d763a9",
