@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/Susurrus-LLC/aeons-end-randomizer/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
