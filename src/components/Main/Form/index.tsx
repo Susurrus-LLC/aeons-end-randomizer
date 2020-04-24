@@ -7,7 +7,7 @@ import MarketSetup from './MarketSetup'
 import Combatants from './Combatants'
 import Submit from './Submit'
 
-import './form.sass'
+import styles from './form.module.sass'
 
 const Form = props => {
   const [ae, setAE] = useState(true)
@@ -52,9 +52,9 @@ const Form = props => {
     <form
       id='form'
       name='form'
-      className='form'
+      className={styles.form}
     >
-      <div className='column'>
+      <div className={styles.column}>
         <Sets
           ae={ae}
           setAE={setAE}
@@ -102,7 +102,7 @@ const Form = props => {
           setPMCA={setPMCA}
         />
       </div>
-      <div className='column'>
+      <div className={styles.column}>
         <MarketSetup
           selected={selected}
           setSelected={setSelected}
@@ -111,7 +111,7 @@ const Form = props => {
           markets={Markets}
         />
       </div>
-      <div className='column'>
+      <div className={styles.column}>
         <Combatants
           mages={mages}
           setMages={setMages}

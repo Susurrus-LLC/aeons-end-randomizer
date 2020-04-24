@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './sets.sass'
+import styles from './sets.module.sass'
 
 const Sets = props => (
-  <div className='sets'>
-    <ul className='sets-list'>
-      <li className='base'>
+  <div className={styles.sets}>
+    <ul className={styles.setsList}>
+      <li className={styles.base}>
         <label htmlFor='AE'>
           <input
             type='checkbox'
@@ -18,7 +18,7 @@ const Sets = props => (
           Aeon&rsquo;s End
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='TD'>
           <input
             type='checkbox'
@@ -31,7 +31,7 @@ const Sets = props => (
           The Depths
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='TN'>
           <input
             type='checkbox'
@@ -44,7 +44,7 @@ const Sets = props => (
           The Nameless
         </label>
       </li>
-      <li className='base'>
+      <li className={styles.base}>
         <label htmlFor='WE'>
           <input
             type='checkbox'
@@ -57,7 +57,7 @@ const Sets = props => (
           War Eternal
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='TV'>
           <input
             type='checkbox'
@@ -70,7 +70,7 @@ const Sets = props => (
           The Void
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='OD'>
           <input
             type='checkbox'
@@ -83,7 +83,7 @@ const Sets = props => (
           The Outer Dark
         </label>
       </li>
-      <li className='base'>
+      <li className={styles.base}>
         <label htmlFor='LG'>
           <input
             type='checkbox'
@@ -96,7 +96,7 @@ const Sets = props => (
           Legacy
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='BS'>
           <input
             type='checkbox'
@@ -109,7 +109,7 @@ const Sets = props => (
           Buried Secrets
         </label>
       </li>
-      <li className='base'>
+      <li className={styles.base}>
         <label htmlFor='NA'>
           <input
             type='checkbox'
@@ -122,7 +122,7 @@ const Sets = props => (
           The New Age
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='SD'>
           <input
             type='checkbox'
@@ -135,7 +135,7 @@ const Sets = props => (
           Shattered Dreams
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='TA'>
           <input
             type='checkbox'
@@ -148,7 +148,7 @@ const Sets = props => (
           The Ancients
         </label>
       </li>
-      <li className='expansion'>
+      <li className={styles.expansion}>
         <label htmlFor='IW'>
           <input
             type='checkbox'
@@ -161,9 +161,9 @@ const Sets = props => (
           Into the Wild
         </label>
       </li>
-      <li className='base'>Promos</li>
+      <li className={styles.base}>Promos</li>
       <li>
-        <ul className='next-level'>
+        <ul className={styles.nextLevel}>
           <li>
             <label htmlFor='PMES'>
               <input

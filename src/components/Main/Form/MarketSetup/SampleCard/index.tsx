@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './sample-card.sass'
+import styles from './sample-card.module.sass'
 
 const SampleCard = props => {
   const card = JSON.parse(props.card)
@@ -25,10 +25,10 @@ const SampleCard = props => {
   return (
     <div
       id={`card-${props.index}`}
-      className={card.type ? `sample-card ${card.type}` : 'sample-card'}
+      className={card.type ? `${styles.sampleCard} ${card.type}` : styles.sampleCard}
     >
-      <p className='card-text card-type'>{card.type}</p>
-      <p className='card-text card-cost'>{cost()}</p>
+      <p className={`${styles.cardText} ${styles.cardType}`}>{card.type}</p>
+      <p className={`${styles.cardText} ${styles.cardCost}`}>{cost()}</p>
     </div>
   )
 }

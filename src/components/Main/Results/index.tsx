@@ -4,7 +4,7 @@ import cards from '../../../data/cards.json'
 import allMages from '../../../data/mages.json'
 import nemeses from '../../../data/nemeses.json'
 
-import './results.sass'
+import styles from './results.module.sass'
 
 const Results = props => {
   const [noBase, setNoBase] = useState(false)
@@ -138,11 +138,9 @@ const Results = props => {
   const noBases = () => {
     if (noBase) {
       return (
-        <React.Fragment>
-          <p className='error'>
-            You must select at least one base game.
-          </p>
-        </React.Fragment>
+        <p className={styles.error}>
+          You must select at least one base game.
+        </p>
       )
     }
   }
@@ -211,11 +209,11 @@ const Results = props => {
   const magesList = () => {
     if (selectedMages.length > 0) {
       return (
-        <div className='column'>
+        <div className={styles.column}>
           <h2>Mages</h2>
-          <ul className='mages-list'>
+          <ul className={styles.magesList}>
             {selectedMages.map((item, i) => (
-              <li className='mage' key={i}>{item.mage}</li>
+              <li className={styles.mage} key={i}>{item.mage}</li>
             ))}
           </ul>
         </div>
@@ -261,11 +259,11 @@ const Results = props => {
     if (selectedGems.length > 0 || selectedRelics.length > 0 || selectedSpells.length > 0) {
       const marketArr = [].concat(selectedGems, selectedRelics, selectedSpells)
       return (
-        <div className='column'>
+        <div className={styles.column}>
           <h2>Market</h2>
-          <ul className='market-list'>
+          <ul className={styles.marketList}>
             {marketArr.map((item, i) => (
-              <li className='market-item' key={i}>{item.name} ({item.type}) (<span className='cost'>{item.cost}æ</span>)</li>
+              <li className={styles.marketItem} key={i}>{item.name} ({item.type}) (<span className={styles.cost}>{item.cost}æ</span>)</li>
             ))}
           </ul>
         </div>
@@ -284,9 +282,9 @@ const Results = props => {
       if (availNems.length > 0) {
         if (selectedNems.length > 0) {
           return (
-            <div className='column'>
+            <div className={styles.column}>
               <h2>Nemesis</h2>
-              <p className='nemesis'>
+              <p className={styles.nemesis}>
                 {`${selectedNems[0].nemesis} (difficulty ${selectedNems[0].difficulty})`}
               </p>
             </div>
@@ -294,9 +292,9 @@ const Results = props => {
         }
       } else {
         return (
-          <div className='column'>
+          <div className={styles.column}>
             <h2>Nemesis</h2>
-            <p className='nemesis'>
+            <p className={styles.nemesis}>
               No nemeses match the selected difficulty range.
             </p>
           </div>
@@ -306,7 +304,7 @@ const Results = props => {
   }
 
   return (
-    <div className='results'>
+    <div className={styles.results}>
       {noBases()}
       {magesList()}
       {marketList()}

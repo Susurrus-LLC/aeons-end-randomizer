@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import SampleCard from './SampleCard'
 
-import './marketsetup.sass'
+import styles from './marketsetup.module.sass'
 
 const MarketSetup = props => {
   useEffect(() => {
@@ -32,7 +32,7 @@ const MarketSetup = props => {
   ))
 
   return (
-    <div className='market-setup'>
+    <div className={styles.marketSetup}>
       <select
         id='market-setup'
         name='market-setup'
@@ -42,7 +42,7 @@ const MarketSetup = props => {
       >
         {setOptions()}
       </select>
-      <div className='setup-grid'>
+      <div className={styles.setupGrid}>
         {displayCards()}
       </div>
     </div>
