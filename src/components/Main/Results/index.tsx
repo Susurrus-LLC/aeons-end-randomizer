@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import cards from '../../../data/cards.json'
-import allMages from '../../../data/mages.json'
-import nemeses from '../../../data/nemeses.json'
+import Data from '../../../data'
 
 import styles from './results.module.sass'
 
@@ -19,6 +17,10 @@ const Results = props => {
   const [selectedMages, setSelectedMages] = useState([])
   const [availNems, setAvailNems] = useState([])
   const [selectedNems, setSelectedNems] = useState([])
+
+  const cards = Data.cards
+  const allMages = Data.mages
+  const nemeses = Data.nemeses
 
   // Randomly select from a list without duplicates
   const randUnique = (list, criteria, exclude) => {

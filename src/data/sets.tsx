@@ -1,4 +1,6 @@
-[
+import { Sets } from '.'
+
+const sets: Sets = [
   {
     "set": "Aeon's End",
     "code": "AE",
@@ -65,3 +67,5 @@
     "wave": "PM"
   }
 ]
+
+export default sets

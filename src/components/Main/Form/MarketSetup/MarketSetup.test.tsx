@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import MarketSetup from '.'
-import Markets from '../../../../data/marketTemplates.json'
+import Data from '../../../../data'
+
+const Markets = Data.marketTemplates
 
 describe('Market Setup', () => {
   it('renders without crashing', () => {

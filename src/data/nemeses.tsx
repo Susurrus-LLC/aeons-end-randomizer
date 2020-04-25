@@ -1,4 +1,6 @@
-[
+import { Nemeses } from '.'
+
+const nemeses: Nemeses = [
   {
     "nemesis": "Rageborne",
     "difficulty": 2,
@@ -150,3 +152,5 @@
     "set": "IW"
   }
 ]
+
+export default nemeses

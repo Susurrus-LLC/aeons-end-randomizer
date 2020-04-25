@@ -1,4 +1,6 @@
-[
+import { MageSet } from '.'
+
+const mages: MageSet = [
   {
     "mage": "Adelheim",
     "set": "AE"
@@ -164,3 +166,5 @@
     "set": "IW"
   }
 ]
+
+export default mages

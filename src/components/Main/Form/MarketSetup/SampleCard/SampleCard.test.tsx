@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import SampleCard from '.'
-import cards from '../../../../../data/cards.json'
+import Data from '../../../../../data'
+
+const cards = Data.cards
 
 describe('Sample Card', () => {
   it('renders without crashing', () => {

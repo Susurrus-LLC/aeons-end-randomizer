@@ -1,4 +1,6 @@
-[
+import { CardSet } from '.'
+
+const cards: CardSet = [
   {
     "name": "Jade",
     "type": "gem",
@@ -1194,3 +1196,5 @@
     "cost": 7
   }
 ]
+
+export default cards
