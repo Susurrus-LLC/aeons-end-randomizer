@@ -1,10 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './header.module.sass'
 
 const Header = () => (
   <header className={styles.header}>
-    <h1 className={styles.title}>Aeon&rsquo;s End Randomizer</h1>
+    <h1 className={styles.title}>
+      <Link to='/' className={styles.titleLink}>
+        Aeon&rsquo;s End Randomizer
+      </Link>
+    </h1>
   </header>
 )
 

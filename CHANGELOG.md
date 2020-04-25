@@ -12,6 +12,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 - Add [Code of Conduct](https://github.com/Susurrus-LLC/aeons-end-randomizer/blob/master/.github/CODE_OF_CONDUCT.md) document.
 - Add [Contributing](https://github.com/Susurrus-LLC/aeons-end-randomizer/blob/master/.github/CONTRIBUTING.md) document.
 - Add GitHub [issue templates](https://github.com/Susurrus-LLC/aeons-end-randomizer/tree/master/.github/ISSUE_TEMPLATE) and [pull request template](https://github.com/Susurrus-LLC/aeons-end-randomizer/tree/master/.github/PULL_REQUEST_TEMPLATE).
+- Add React Router to handle route switching.
 
 ### Changed
 

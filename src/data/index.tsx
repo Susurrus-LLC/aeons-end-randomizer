@@ -3,6 +3,7 @@ import MAGES from './mages'
 import MARKETS from './markets'
 import NEMESES from './nemeses'
 import SETS from './sets'
+import DEFAULTDATA from './defaultData'
 
 export type Card = {
   name: string,
@@ -19,6 +20,8 @@ export type Mage = {
 }
 
 export type MageSet = Mage[]
+
+export type MageNum = 1 | 2 | 3 | 4
 
 export type CardTemplate = {
   type: string,
@@ -50,6 +53,14 @@ export type Nemesis = {
 
 export type Nemeses = Nemesis[]
 
+export type NemCard = {
+  name: string,
+  type: "attack" | "power" | "minion",
+  set: string
+}
+
+export type NemCardSet = NemCard[]
+
 export type Set = {
   set: string,
   code: string,
@@ -58,4 +69,18 @@ export type Set = {
 
 export type Sets = Set[]
 
-export default { CARDS, MAGES, MARKETS, NEMESES, SETS }
+export type Data = {
+  availableMages: MageSet | [null],
+  availableNemeses: Nemeses | [null],
+  availableMarkets: MarketSet | [null],
+  availableCards: CardSet | [null],
+  availableNemCards: NemCardSet | [null],
+  numMages: MageNum | null,
+  mages: MageSet | [null],
+  nemesis: Nemesis | null,
+  market: Market | null,
+  supply: CardSet | [null],
+  nemCards: NemCardSet | [null]
+}
+
+export default { CARDS, MAGES, MARKETS, NEMESES, SETS, DEFAULTDATA }

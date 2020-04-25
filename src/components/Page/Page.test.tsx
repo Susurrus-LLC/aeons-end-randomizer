@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Sets from '.'
+import Page from '.'
 
-describe('Sets', () => {
+describe('Page', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<Sets />, div)
+    ReactDOM.render(<Page>Test</Page>, div)
     ReactDOM.unmountComponentAtNode(div)
   })
 })

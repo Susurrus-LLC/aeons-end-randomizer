@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import 'normalize.css/normalize.css'
 
 import './App.sass'
@@ -9,11 +10,13 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className='App'>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Router basename='aeons-end-randomizer'>
+      <div className='App'>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
