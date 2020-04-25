@@ -2,7 +2,7 @@ import { Sets } from '.'
 
 const SETS: Sets = [
   {
-    "set": "Aeon's End",
+    "set": "Aeon’s End",
     "code": "AE",
     "wave": "AE"
   },
