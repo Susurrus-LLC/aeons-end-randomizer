@@ -21,7 +21,11 @@ const Sidebar = () => {
       ref={overlayRef}
     >
       <div className={`${styles.sidebar} ${styles.sb}`} ref={sidebarRef}>
-        <button className={styles.closeButton} type='button' onClick={toggleOpen}>
+        <button
+          className={styles.closeButton}
+          type='button'
+          onClick={toggleOpen}
+        >
           Close
         </button>
         <ul className={styles.nav}>
