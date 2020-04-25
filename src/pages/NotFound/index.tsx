@@ -5,7 +5,7 @@ import ButtonLink from '../../components/ButtonLink'
 import Page from '../../components/Page'
 
 const NotFound = () => {
-  let history = useHistory()
+  const history = useHistory()
 
   return (
     <Page>
