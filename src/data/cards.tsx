@@ -1,6 +1,6 @@
 import { CardSet } from '.'
 
-const cards: CardSet = [
+const CARDS: CardSet = [
   {
     "name": "Jade",
     "type": "gem",
@@ -1197,4 +1197,4 @@ const cards: CardSet = [
   }
 ]
 
-export default cards
+export default CARDS

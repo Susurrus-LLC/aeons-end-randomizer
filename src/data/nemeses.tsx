@@ -1,6 +1,6 @@
 import { Nemeses } from '.'
 
-const nemeses: Nemeses = [
+const NEMESES: Nemeses = [
   {
     "nemesis": "Rageborne",
     "difficulty": 2,
@@ -153,4 +153,4 @@ const nemeses: Nemeses = [
   }
 ]
 
-export default nemeses
+export default NEMESES

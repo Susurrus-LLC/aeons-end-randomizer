@@ -37,7 +37,8 @@ const Form = props => {
   const [mages, setMages] = useState(4)
   const [minNem, setMinNem] = useState(1)
   const [maxNem, setMaxNem] = useState(10)
-  const Markets = Data.marketTemplates
+
+  const Markets = Data.MARKETS
 
   const randomize = () => props.setData({
     sets: { ae, td, tn, we, tv, od, lg, bs, na, sd, ta, iw, pmES, pmFQ, pmRL, pmAI, pmFV, pmTS, pmSM, pmDF, pmIF, pmCA },

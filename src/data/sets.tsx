@@ -1,6 +1,6 @@
 import { Sets } from '.'
 
-const sets: Sets = [
+const SETS: Sets = [
   {
     "set": "Aeon's End",
     "code": "AE",
@@ -68,4 +68,4 @@ const sets: Sets = [
   }
 ]
 
-export default sets
+export default SETS

@@ -1,8 +1,8 @@
-import cards from './cards'
-import mages from './mages'
-import marketTemplates from './marketTemplates'
-import nemeses from './nemeses'
-import sets from './sets'
+import CARDS from './cards'
+import MAGES from './mages'
+import MARKETS from './markets'
+import NEMESES from './nemeses'
+import SETS from './sets'
 
 export type Card = {
   name: string,
@@ -58,4 +58,4 @@ export type Set = {
 
 export type Sets = Set[]
 
-export default { cards, mages, marketTemplates, nemeses, sets }
+export default { CARDS, MAGES, MARKETS, NEMESES, SETS }

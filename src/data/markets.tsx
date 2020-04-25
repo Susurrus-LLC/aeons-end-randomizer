@@ -1,6 +1,6 @@
 import { MarketSet } from '.'
 
-const marketTemplates: MarketSet = [
+const MARKETS: MarketSet = [
   {
   "name": "Balanced Setup",
     "card1": {
@@ -370,4 +370,4 @@ const marketTemplates: MarketSet = [
   }
 ]
 
-export default marketTemplates
+export default MARKETS

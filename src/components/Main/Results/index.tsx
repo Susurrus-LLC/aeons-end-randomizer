@@ -18,9 +18,9 @@ const Results = props => {
   const [availNems, setAvailNems] = useState([])
   const [selectedNems, setSelectedNems] = useState([])
 
-  const cards = Data.cards
-  const allMages = Data.mages
-  const nemeses = Data.nemeses
+  const cards = Data.CARDS
+  const allMages = Data.MAGES
+  const nemeses = Data.NEMESES
 
   // Randomly select from a list without duplicates
   const randUnique = (list, criteria, exclude) => {
