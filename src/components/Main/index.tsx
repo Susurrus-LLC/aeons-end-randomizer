@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
-
-import data, { Data } from '../../data'
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 
 import About from '../../pages/About'
 import Home from '../../pages/Home'
@@ -14,11 +12,7 @@ import Supply from '../../pages/Supply'
 
 import styles from './main.module.sass'
 
-const DEFAULTDATA = data.DEFAULTDATA
-
 const Main = () => {
-  const [data, setData] = useState<Data>(DEFAULTDATA)
-
   return (
     <main className={styles.main}>
       <Switch>
