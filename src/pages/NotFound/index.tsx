@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
+import ButtonLink from '../../components/ButtonLink'
 import Page from '../../components/Page'
-import styles from '../../components/Page/page.module.sass'
 
 const NotFound = () => {
   let history = useHistory()
@@ -11,19 +11,13 @@ const NotFound = () => {
     <Page>
       <p>
         You seem to have fallen into a breach and gotten lost in the void. That
-        page doesn&rsquo;s exist here.
+        page doesn&rsquo;t exist here.
       </p>
       <p>
         Why don&rsquo;t you try returning back <Link to='/'>Home</Link>? You
         could also{' '}
-        <button
-          className={styles.buttonLink}
-          type='button'
-          onClick={() => history.goBack()}
-        >
-          go back
-        </button>{' '}
-        and try to retrace your steps.
+        <ButtonLink onClick={() => history.goBack()}>go back</ButtonLink> and
+        try to retrace your steps.
       </p>
     </Page>
   )
