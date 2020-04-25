@@ -5,8 +5,8 @@ import 'normalize.css/normalize.css'
 import './App.sass'
 
 import Header from './components/Header'
-import Main from './components/Main'
 import Sidebar from './components/Sidebar'
+import Main from './components/Main'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -14,8 +14,8 @@ const App = () => {
     <Router basename='aeons-end-randomizer'>
       <div className='App'>
         <Header />
-        <Main />
         <Sidebar />
+        <Main />
         <Footer />
       </div>
     </Router>

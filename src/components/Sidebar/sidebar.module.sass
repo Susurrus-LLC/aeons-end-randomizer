@@ -1,17 +1,21 @@
 @import ../../styles/variables
 
-.sidebar
-  max-width: 100%
-  height: 100%
-  background-color: $white
+.sb
   position: absolute
   right: 0
-  top: 0
-  box-shadow: 0 0 ($ms8 * 1rem) 0 $black
-  visibility: hidden
+  max-width: 100%
 
-.open
-  visibility: visible
+.toggle
+  position: absolute
+  background: none
+
+.sidebar
+  height: 100%
+  background-color: $white
+  top: 0
+
+.sidebar, .menuButton
+  box-shadow: 0 0 ($ms8 * 1rem) 0 $black
 
 .active
   &:link, &:visited, &:hover, &:active

@@ -1,24 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import styles from './sidebar.module.sass'
 
 const Sidebar = () => {
-  const [open, setOpen] = useState<boolean>(true)
-  const [sbClasses, setSbClasses] = useState<string>(styles.sidebar)
-
-  useEffect(() => {
-    if (open) {
-      setSbClasses(`${styles.sidebar} ${styles.open}`)
-    } else {
-      setSbClasses(styles.sidebar)
-    }
-  }, [open])
+  const [open, setOpen] = useState<boolean>(false)
 
   const toggleOpen = () => setOpen(!open)
 
-  return (
-    <div className={sbClasses}>
+  return open ? (
+    <div className={`${styles.sidebar} ${styles.sb}`}>
       <button type='button' onClick={toggleOpen}>
         Close
       </button>
@@ -94,6 +85,12 @@ const Sidebar = () => {
           </NavLink>
         </li>
       </ul>
+    </div>
+  ) : (
+    <div className={`${styles.toggle} ${styles.sb}`}>
+      <button className={styles.menuButton} type='button' onClick={toggleOpen}>
+        Menu
+      </button>
     </div>
   )
 }
