@@ -8,6 +8,7 @@ import Home from '../../pages/Home'
 import Mages from '../../pages/Mages'
 import Nemesis from '../../pages/Nemesis'
 import NemesisCards from '../../pages/NemesisCards'
+import NotFound from '../../pages/NotFound'
 import Setup from '../../pages/Setup'
 import Supply from '../../pages/Supply'
 
@@ -21,6 +22,9 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
         <Route path='/nemesis'>
           <Nemesis />
         </Route>
@@ -39,11 +43,8 @@ const Main = () => {
         <Route path='/about'>
           <About />
         </Route>
-        <Route path='/'>
-          <Home />
-        </Route>
         <Route path='*'>
-          <Redirect to='/' />
+          <NotFound />
         </Route>
       </Switch>
     </main>
