@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 
 import data, { Data } from '../../data'
 
@@ -41,6 +41,9 @@ const Main = () => {
         </Route>
         <Route path='/'>
           <Home />
+        </Route>
+        <Route path='*'>
+          <Redirect to='/' />
         </Route>
       </Switch>
     </main>
