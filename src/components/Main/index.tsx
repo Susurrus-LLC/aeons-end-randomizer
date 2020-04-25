@@ -3,6 +3,14 @@ import { Switch, Route } from 'react-router-dom'
 
 import data, { Data } from '../../data'
 
+import About from '../../pages/About'
+import Home from '../../pages/Home'
+import Mages from '../../pages/Mages'
+import Nemesis from '../../pages/Nemesis'
+import NemesisCards from '../../pages/NemesisCards'
+import Setup from '../../pages/Setup'
+import Supply from '../../pages/Supply'
+
 import styles from './main.module.sass'
 
 const DEFAULTDATA = data.DEFAULTDATA
@@ -14,25 +22,25 @@ const Main = () => {
     <main className={styles.main}>
       <Switch>
         <Route path='/nemesis'>
-          <p>Nemesis Page</p>
+          <Nemesis />
         </Route>
         <Route path='/mages'>
-          <p>Mages Page</p>
+          <Mages />
         </Route>
         <Route path='/supply'>
-          <p>Supply Page</p>
+          <Supply />
         </Route>
         <Route path='/nemesis-cards'>
-          <p>Nemesis Cards Page</p>
+          <NemesisCards />
         </Route>
         <Route path='/setup'>
-          <p>Setup Page with subroutes</p>
+          <Setup />
         </Route>
         <Route path='/about'>
-          <p>About Page</p>
+          <About />
         </Route>
         <Route path='/'>
-          <p>Home Page</p>
+          <Home />
         </Route>
       </Switch>
     </main>
