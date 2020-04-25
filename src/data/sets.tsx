@@ -38,7 +38,7 @@ const SETS: Sets = [
   },
   {
     set: 'Buried Secrets',
-    code: 'LG',
+    code: 'BS',
     wave: 'LG'
   },
   {

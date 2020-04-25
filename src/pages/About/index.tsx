@@ -9,9 +9,9 @@ import AppInfo from './AppInfo'
 const About = () => {
   const listSets = () =>
     Data.SETS.filter(set => set.code !== 'PM').map(set => (
-      <>
-        <cite key={set.code}>{set.set}</cite>,{' '}
-      </>
+      <React.Fragment key={set.code}>
+        <cite>{set.set}</cite>,{' '}
+      </ React.Fragment>
     ))
 
   return (
