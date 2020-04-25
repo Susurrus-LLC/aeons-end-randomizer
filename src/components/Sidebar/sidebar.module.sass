@@ -9,23 +9,77 @@
   background: rgba(red($black), green($black), blue($black), 0.5)
 
 .sb
-  right: 0
   max-width: 100%
 
 .toggle
   position: fixed
   top: $lnht * 1rem
+  right: $lnht * 1rem
   background: none
-
-.sidebar
-  position: fixed
-  height: 100%
-  background-color: $white
-  top: 0
 
 .sidebar, .menuButton
   box-shadow: 0 0 ($ms8 * 1rem) 0 $black
 
+.sidebar
+  top: 0
+  right: 0
+  position: fixed
+  height: 100%
+  background-color: $white
+
+.nav
+  list-style: none
+  margin: 0
+  padding: 0
+
+.navItem
+  display: block
+
+.navLink
+  display: block
+
+  &:link, &:visited, &:hover, &:active
+    text-decoration: none
+    color: inherit
+
+.closeButton
+  display: block
+  border: none
+  padding: $msa0 * 1rem
+  margin: $msa0 * 1rem
+  margin-top: 0
+  margin-right: $ms8 * 1rem
+  text-align: right
+  margin-left: auto
+  background: none
+  border-radius: 0
+  border-bottom: 1px solid $red
+
+  &:hover, &:active
+    background: none
+    color: $red
+
+.closeButton, .navBlock
+  width: 100%
+
+.navBlock
+  padding-top: $msa0 * 1rem
+  padding-right: $ms8 * 2rem
+  padding-bottom: $msa0 * 1rem
+  padding-left: $ms8 * 1rem
+
+  &:hover, &:active
+    background-color: rgba(red($black), green($black), blue($black), 0.2)
+    box-shadow: inset 0 0 $msa0 * 1rem 0 rgba(red($black), green($black), blue($black), 0.2)
+
 .active
   &:link, &:visited, &:hover, &:active
     color: $red
+
+  .navBlock
+    background-color: rgba(red($black), green($black), blue($black), 0.1)
+    box-shadow: inset 0 0 $msa0 * 1rem 0 rgba(red($black), green($black), blue($black), 0.1)
+
+    &:hover, &:active
+      background-color: rgba(red($black), green($black), blue($black), 0.2)
+      box-shadow: inset 0 0 $msa0 * 1rem 0 rgba(red($black), green($black), blue($black), 0.2)

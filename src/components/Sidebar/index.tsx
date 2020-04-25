@@ -21,78 +21,85 @@ const Sidebar = () => {
       ref={overlayRef}
     >
       <div className={`${styles.sidebar} ${styles.sb}`} ref={sidebarRef}>
-        <button type='button' onClick={toggleOpen}>
+        <button className={styles.closeButton} type='button' onClick={toggleOpen}>
           Close
         </button>
-        <ul>
-          <li>
+        <ul className={styles.nav}>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/'
               onClick={toggleOpen}
             >
-              Home
+              <div className={styles.navBlock}>Home</div>
             </NavLink>
           </li>
-          <li>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/nemesis'
               onClick={toggleOpen}
             >
-              Nemesis
+              <div className={styles.navBlock}>Nemesis</div>
             </NavLink>
           </li>
-          <li>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/mages'
               onClick={toggleOpen}
             >
-              Mages
+              <div className={styles.navBlock}>Mages</div>
             </NavLink>
           </li>
-          <li>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/supply'
               onClick={toggleOpen}
             >
-              Supply
+              <div className={styles.navBlock}>Supply</div>
             </NavLink>
           </li>
-          <li>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/nemesis-cards'
               onClick={toggleOpen}
             >
-              Nemesis Cards
+              <div className={styles.navBlock}>Nemesis Cards</div>
             </NavLink>
           </li>
-          <li>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/setup'
               onClick={toggleOpen}
             >
-              Setup
+              <div className={styles.navBlock}>Setup</div>
             </NavLink>
           </li>
-          <li>
+          <li className={styles.navItem}>
             <NavLink
+              className={styles.navLink}
               activeClassName={styles.active}
               exact
               to='/about'
               onClick={toggleOpen}
             >
-              About
+              <div className={styles.navBlock}>About</div>
             </NavLink>
           </li>
         </ul>
