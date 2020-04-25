@@ -2,18 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import data from '../../data'
+import data from '../../../data'
 
-import Setup from '.'
+import Waves from '.'
 
 const DEFAULTDATA = data.DEFAULTDATA
 
-describe('Setup page', () => {
+describe('Waves page', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div')
     ReactDOM.render(
       <Router>
-        <Setup data={DEFAULTDATA} setData={() => DEFAULTDATA} />
+        <Waves data={DEFAULTDATA} setData={() => DEFAULTDATA} />
       </Router>,
       div
     )

@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
+
+import data, { Data } from '../../data'
 
 import About from '../../pages/About'
 import Home from '../../pages/Home'
@@ -12,7 +14,11 @@ import Supply from '../../pages/Supply'
 
 import styles from './main.module.sass'
 
+const DEFAULTDATA = data.DEFAULTDATA
+
 const Main = () => {
+  const [data, setData] = useState<Data>(DEFAULTDATA)
+
   return (
     <main className={styles.main}>
       <Switch>
@@ -32,7 +38,7 @@ const Main = () => {
           <NemesisCards />
         </Route>
         <Route path='/setup'>
-          <Setup />
+          <Setup data={data} setData={setData} />
         </Route>
         <Route path='/about'>
           <About />
