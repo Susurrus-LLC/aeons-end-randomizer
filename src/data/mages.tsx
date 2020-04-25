@@ -2,168 +2,168 @@ import { MageSet } from '.'
 
 const MAGES: MageSet = [
   {
-    "mage": "Adelheim",
-    "set": "AE"
+    mage: 'Adelheim',
+    set: 'AE'
   },
   {
-    "mage": "Brama",
-    "set": "AE"
+    mage: 'Brama',
+    set: 'AE'
   },
   {
-    "mage": "Jian",
-    "set": "AE"
+    mage: 'Jian',
+    set: 'AE'
   },
   {
-    "mage": "Kadir",
-    "set": "AE"
+    mage: 'Kadir',
+    set: 'AE'
   },
   {
-    "mage": "Lash",
-    "set": "AE"
+    mage: 'Lash',
+    set: 'AE'
   },
   {
-    "mage": "Mist",
-    "set": "AE"
+    mage: 'Mist',
+    set: 'AE'
   },
   {
-    "mage": "Phaedraxa",
-    "set": "AE"
+    mage: 'Phaedraxa',
+    set: 'AE'
   },
   {
-    "mage": "Xaxos",
-    "set": "AE"
+    mage: 'Xaxos',
+    set: 'AE'
   },
   {
-    "mage": "Nym",
-    "set": "TD"
+    mage: 'Nym',
+    set: 'TD'
   },
   {
-    "mage": "Reeve",
-    "set": "TD"
+    mage: 'Reeve',
+    set: 'TD'
   },
   {
-    "mage": "Z’hana",
-    "set": "TD"
+    mage: 'Z’hana',
+    set: 'TD'
   },
   {
-    "mage": "Malastar",
-    "set": "TN"
+    mage: 'Malastar',
+    set: 'TN'
   },
   {
-    "mage": "Dezmodia",
-    "set": "WE"
+    mage: 'Dezmodia',
+    set: 'WE'
   },
   {
-    "mage": "Garu",
-    "set": "WE"
+    mage: 'Garu',
+    set: 'WE'
   },
   {
-    "mage": "Gex",
-    "set": "WE"
+    mage: 'Gex',
+    set: 'WE'
   },
   {
-    "mage": "Mazahaedron",
-    "set": "WE"
+    mage: 'Mazahaedron',
+    set: 'WE'
   },
   {
-    "mage": "Mist (WE)",
-    "set": "WE"
+    mage: 'Mist (WE)',
+    set: 'WE'
   },
   {
-    "mage": "Quilius",
-    "set": "WE"
+    mage: 'Quilius',
+    set: 'WE'
   },
   {
-    "mage": "Ulgimor",
-    "set": "WE"
+    mage: 'Ulgimor',
+    set: 'WE'
   },
   {
-    "mage": "Yan Magda",
-    "set": "WE"
+    mage: 'Yan Magda',
+    set: 'WE'
   },
   {
-    "mage": "Sparrow",
-    "set": "TV"
+    mage: 'Sparrow',
+    set: 'TV'
   },
   {
-    "mage": "Xaxos (TV)",
-    "set": "TV"
+    mage: 'Xaxos (TV)',
+    set: 'TV'
   },
   {
-    "mage": "Indira",
-    "set": "OD"
+    mage: 'Indira',
+    set: 'OD'
   },
   {
-    "mage": "Remnant",
-    "set": "OD"
+    mage: 'Remnant',
+    set: 'OD'
   },
   {
-    "mage": "Blue",
-    "set": "LG"
+    mage: 'Blue',
+    set: 'LG'
   },
   {
-    "mage": "Green",
-    "set": "LG"
+    mage: 'Green',
+    set: 'LG'
   },
   {
-    "mage": "Orange",
-    "set": "LG"
+    mage: 'Orange',
+    set: 'LG'
   },
   {
-    "mage": "Yellow",
-    "set": "LG"
+    mage: 'Yellow',
+    set: 'LG'
   },
   {
-    "mage": "Sahala",
-    "set": "NA"
+    mage: 'Sahala',
+    set: 'NA'
   },
   {
-    "mage": "Gygar",
-    "set": "NA"
+    mage: 'Gygar',
+    set: 'NA'
   },
   {
-    "mage": "Soskel",
-    "set": "NA"
+    mage: 'Soskel',
+    set: 'NA'
   },
   {
-    "mage": "Taqren",
-    "set": "NA"
+    mage: 'Taqren',
+    set: 'NA'
   },
   {
-    "mage": "Talix",
-    "set": "NA"
+    mage: 'Talix',
+    set: 'NA'
   },
   {
-    "mage": "Rhia",
-    "set": "NA"
+    mage: 'Rhia',
+    set: 'NA'
   },
   {
-    "mage": "Claudia",
-    "set": "NA"
+    mage: 'Claudia',
+    set: 'NA'
   },
   {
-    "mage": "Lost",
-    "set": "NA"
+    mage: 'Lost',
+    set: 'NA'
   },
   {
-    "mage": "Nook",
-    "set": "SD"
+    mage: 'Nook',
+    set: 'SD'
   },
   {
-    "mage": "Mazra",
-    "set": "TA"
+    mage: 'Mazra',
+    set: 'TA'
   },
   {
-    "mage": "Qu",
-    "set": "TA"
+    mage: 'Qu',
+    set: 'TA'
   },
   {
-    "mage": "Inco",
-    "set": "IW"
+    mage: 'Inco',
+    set: 'IW'
   },
   {
-    "mage": "Razra",
-    "set": "IW"
+    mage: 'Razra',
+    set: 'IW'
   }
 ]
 

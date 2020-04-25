@@ -9,8 +9,22 @@ const NotFound = () => {
 
   return (
     <Page>
-      <p>You seem to have fallen into a breach and gotten lost in the void. That page doesn&rsquo;s exist here.</p>
-      <p>Why don&rsquo;t you try returning back <Link to='/'>Home</Link>? You could also <button className={styles.buttonLink} type='button' onClick={() => history.goBack()}>go back</button> and try to retrace your steps.</p>
+      <p>
+        You seem to have fallen into a breach and gotten lost in the void. That
+        page doesn&rsquo;s exist here.
+      </p>
+      <p>
+        Why don&rsquo;t you try returning back <Link to='/'>Home</Link>? You
+        could also{' '}
+        <button
+          className={styles.buttonLink}
+          type='button'
+          onClick={() => history.goBack()}
+        >
+          go back
+        </button>{' '}
+        and try to retrace your steps.
+      </p>
     </Page>
   )
 }

@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker'
 import App from './App'
 import './styles/global.sass'
 
-const rootElement = document.getElementById("root")
+const rootElement = document.getElementById('root')
 
 if (rootElement !== null && rootElement.hasChildNodes()) {
   ReactDOM.hydrate(<App />, rootElement)

@@ -11,7 +11,8 @@ describe('Main', () => {
       <Router>
         <Main />
       </Router>,
-      div)
+      div
+    )
     ReactDOM.unmountComponentAtNode(div)
   })
 })

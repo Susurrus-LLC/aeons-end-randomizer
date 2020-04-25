@@ -2,69 +2,69 @@ import { Sets } from '.'
 
 const SETS: Sets = [
   {
-    "set": "Aeon’s End",
-    "code": "AE",
-    "wave": "AE"
+    set: 'Aeon’s End',
+    code: 'AE',
+    wave: 'AE'
   },
   {
-    "set": "The Depths",
-    "code": "TD",
-    "wave": "AE"
+    set: 'The Depths',
+    code: 'TD',
+    wave: 'AE'
   },
   {
-    "set": "The Nameless",
-    "code": "TN",
-    "wave": "AE"
+    set: 'The Nameless',
+    code: 'TN',
+    wave: 'AE'
   },
   {
-    "set": "War Eternal",
-    "code": "WE",
-    "wave": "WE"
+    set: 'War Eternal',
+    code: 'WE',
+    wave: 'WE'
   },
   {
-    "set": "The Void",
-    "code": "TV",
-    "wave": "WE"
+    set: 'The Void',
+    code: 'TV',
+    wave: 'WE'
   },
   {
-    "set": "The Outer Dark",
-    "code": "OD",
-    "wave": "WE"
+    set: 'The Outer Dark',
+    code: 'OD',
+    wave: 'WE'
   },
   {
-    "set": "Legacy",
-    "code": "LG",
-    "wave": "LG"
+    set: 'Legacy',
+    code: 'LG',
+    wave: 'LG'
   },
   {
-    "set": "Buried Secrets",
-    "code": "LG",
-    "wave": "LG"
+    set: 'Buried Secrets',
+    code: 'LG',
+    wave: 'LG'
   },
   {
-    "set": "The New Age",
-    "code": "NA",
-    "wave": "NA"
+    set: 'The New Age',
+    code: 'NA',
+    wave: 'NA'
   },
   {
-    "set": "Shattered Dreams",
-    "code": "SD",
-    "wave": "NA"
+    set: 'Shattered Dreams',
+    code: 'SD',
+    wave: 'NA'
   },
   {
-    "set": "The Ancients",
-    "code": "TA",
-    "wave": "NA"
+    set: 'The Ancients',
+    code: 'TA',
+    wave: 'NA'
   },
   {
-    "set": "Into the Wild",
-    "code": "IW",
-    "wave": "NA"
+    set: 'Into the Wild',
+    code: 'IW',
+    wave: 'NA'
   },
   {
-    "set": "Promo",
-    "code": "PM",
-    "wave": "PM"
+    set: 'Promo',
+    code: 'PM',
+    wave: 'PM'
   }
 ]
 

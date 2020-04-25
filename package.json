@@ -18,8 +18,14 @@
     "postbuild": "react-snap",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
+    "format": "prettier-standard src/**/*.{js,jsx,ts,tsx}",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format"
+    }
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -41,6 +47,8 @@
   "devDependencies": {
     "eslint-plugin-react-hooks": "^3.0.0",
     "gh-pages": "^2.2.0",
+    "husky": "^4.2.5",
+    "prettier-standard": "^16.3.0",
     "react-snap": "^1.23.0",
     "standard": "^14.3.3"
   },

@@ -2,370 +2,370 @@ import { MarketSet } from '.'
 
 const MARKETS: MarketSet = [
   {
-  "name": "Balanced Setup",
-    "card1": {
-      "type": "gem",
-      "comp": "<=",
-      "cost": 4
+    name: 'Balanced Setup',
+    card1: {
+      type: 'gem',
+      comp: '<=',
+      cost: 4
     },
-    "card2": {
-      "type": "gem",
-      "comp": "<=",
-      "cost": 4
+    card2: {
+      type: 'gem',
+      comp: '<=',
+      cost: 4
     },
-    "card3": {
-      "type": "gem",
-      "comp": ">=",
-      "cost": 5
+    card3: {
+      type: 'gem',
+      comp: '>=',
+      cost: 5
     },
-    "card4": {
-      "type": "relic",
-      "comp": "any"
+    card4: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
+    card5: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card6": {
-      "type": "spell",
-      "comp": "<=",
-      "cost": 4
+    card6: {
+      type: 'spell',
+      comp: '<=',
+      cost: 4
     },
-    "card7": {
-      "type": "spell",
-      "comp": "<=",
-      "cost": 5
+    card7: {
+      type: 'spell',
+      comp: '<=',
+      cost: 5
     },
-    "card8": {
-      "type": "spell",
-      "comp": ">=",
-      "cost": 5
+    card8: {
+      type: 'spell',
+      comp: '>=',
+      cost: 5
     },
-    "card9": {
-      "type": "spell",
-      "comp": ">=",
-      "cost": 6
+    card9: {
+      type: 'spell',
+      comp: '>=',
+      cost: 6
     }
   },
   {
-    "name": "Market Setup 1",
-    "card1": {
-      "type": "gem",
-      "comp": "<",
-      "cost": 4
+    name: 'Market Setup 1',
+    card1: {
+      type: 'gem',
+      comp: '<',
+      cost: 4
     },
-    "card2": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 4
+    card2: {
+      type: 'gem',
+      comp: '=',
+      cost: 4
     },
-    "card3": {
-      "type": "gem",
-      "comp": "any"
+    card3: {
+      type: 'gem',
+      comp: 'any'
     },
-    "card4": {
-      "type": "relic",
-      "comp": "any"
+    card4: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
+    card5: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card6": {
-      "type": "spell",
-      "comp": "<",
-      "cost": 5
+    card6: {
+      type: 'spell',
+      comp: '<',
+      cost: 5
     },
-    "card7": {
-      "type": "spell",
-      "comp": "<=",
-      "cost": 5
+    card7: {
+      type: 'spell',
+      comp: '<=',
+      cost: 5
     },
-    "card8": {
-      "type": "spell",
-      "comp": ">=",
-      "cost": 5
+    card8: {
+      type: 'spell',
+      comp: '>=',
+      cost: 5
     },
-    "card9": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 5
+    card9: {
+      type: 'spell',
+      comp: '>',
+      cost: 5
     }
   },
   {
-    "name": "Market Setup 2",
-    "card1": {
-      "type": "gem",
-      "comp": ">",
-      "cost": 3
+    name: 'Market Setup 2',
+    card1: {
+      type: 'gem',
+      comp: '>',
+      cost: 3
     },
-    "card2": {
-      "type": "gem",
-      "comp": ">",
-      "cost": 3
+    card2: {
+      type: 'gem',
+      comp: '>',
+      cost: 3
     },
-    "card3": {
-      "type": "gem",
-      "comp": ">",
-      "cost": 3
+    card3: {
+      type: 'gem',
+      comp: '>',
+      cost: 3
     },
-    "card4": {
-      "type": "relic",
-      "comp": ">",
-      "cost": 4
+    card4: {
+      type: 'relic',
+      comp: '>',
+      cost: 4
     },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
+    card5: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card6": {
-      "type": "spell",
-      "comp": "<",
-      "cost": 6
+    card6: {
+      type: 'spell',
+      comp: '<',
+      cost: 6
     },
-    "card7": {
-      "type": "spell",
-      "comp": "<",
-      "cost": 6
+    card7: {
+      type: 'spell',
+      comp: '<',
+      cost: 6
     },
-    "card8": {
-      "type": "spell",
-      "comp": "<=",
-      "cost": 6
+    card8: {
+      type: 'spell',
+      comp: '<=',
+      cost: 6
     },
-    "card9": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 6
+    card9: {
+      type: 'spell',
+      comp: '>',
+      cost: 6
     }
   },
   {
-    "name": "Market Setup 3",
-    "card1": {
-      "type": "gem",
-      "comp": "<",
-      "cost": 4
+    name: 'Market Setup 3',
+    card1: {
+      type: 'gem',
+      comp: '<',
+      cost: 4
     },
-    "card2": {
-      "type": "gem",
-      "comp": "><",
-      "cost": 4,
-      "costHigh": 5
+    card2: {
+      type: 'gem',
+      comp: '><',
+      cost: 4,
+      costHigh: 5
     },
-    "card3": {
-      "type": "gem",
-      "comp": "><",
-      "cost": 4,
-      "costHigh": 5
+    card3: {
+      type: 'gem',
+      comp: '><',
+      cost: 4,
+      costHigh: 5
     },
-    "card4": {
-      "type": "relic",
-      "comp": "any"
+    card4: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card5": {
-      "type": "spell",
-      "comp": "=",
-      "cost": 3
+    card5: {
+      type: 'spell',
+      comp: '=',
+      cost: 3
     },
-    "card6": {
-      "type": "spell",
-      "comp": "=",
-      "cost": 4
+    card6: {
+      type: 'spell',
+      comp: '=',
+      cost: 4
     },
-    "card7": {
-      "type": "spell",
-      "comp": ">=",
-      "cost": 5
+    card7: {
+      type: 'spell',
+      comp: '>=',
+      cost: 5
     },
-    "card8": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 5
+    card8: {
+      type: 'spell',
+      comp: '>',
+      cost: 5
     },
-    "card9": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 5
+    card9: {
+      type: 'spell',
+      comp: '>',
+      cost: 5
     }
   },
   {
-    "name": "Market Setup 4",
-    "card1": {
-      "type": "gem",
-      "comp": ">",
-      "cost": 4
+    name: 'Market Setup 4',
+    card1: {
+      type: 'gem',
+      comp: '>',
+      cost: 4
     },
-    "card2": {
-      "type": "gem",
-      "comp": "any"
+    card2: {
+      type: 'gem',
+      comp: 'any'
     },
-    "card3": {
-      "type": "gem",
-      "comp": "any"
+    card3: {
+      type: 'gem',
+      comp: 'any'
     },
-    "card4": {
-      "type": "relic",
-      "comp": "<=",
-      "cost": 4
+    card4: {
+      type: 'relic',
+      comp: '<=',
+      cost: 4
     },
-    "card5": {
-      "type": "relic",
-      "comp": ">=",
-      "cost": 4
+    card5: {
+      type: 'relic',
+      comp: '>=',
+      cost: 4
     },
-    "card6": {
-      "type": "relic",
-      "comp": "any"
+    card6: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card7": {
-      "type": "spell",
-      "comp": "<",
-      "cost": 5
+    card7: {
+      type: 'spell',
+      comp: '<',
+      cost: 5
     },
-    "card8": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 5
+    card8: {
+      type: 'spell',
+      comp: '>',
+      cost: 5
     },
-    "card9": {
-      "type": "spell",
-      "comp": "any"
+    card9: {
+      type: 'spell',
+      comp: 'any'
     }
   },
   {
-    "name": "Market Setup 5",
-    "card1": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 2
+    name: 'Market Setup 5',
+    card1: {
+      type: 'gem',
+      comp: '=',
+      cost: 2
     },
-    "card2": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 3
+    card2: {
+      type: 'gem',
+      comp: '=',
+      cost: 3
     },
-    "card3": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 4
+    card3: {
+      type: 'gem',
+      comp: '=',
+      cost: 4
     },
-    "card4": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 5
+    card4: {
+      type: 'gem',
+      comp: '=',
+      cost: 5
     },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
+    card5: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card6": {
-      "type": "spell",
-      "comp": "=",
-      "cost": 4
+    card6: {
+      type: 'spell',
+      comp: '=',
+      cost: 4
     },
-    "card7": {
-      "type": "spell",
-      "comp": "=",
-      "cost": 5
+    card7: {
+      type: 'spell',
+      comp: '=',
+      cost: 5
     },
-    "card8": {
-      "type": "spell",
-      "comp": "=",
-      "cost": 6
+    card8: {
+      type: 'spell',
+      comp: '=',
+      cost: 6
     },
-    "card9": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 6
+    card9: {
+      type: 'spell',
+      comp: '>',
+      cost: 6
     }
   },
   {
-    "name": "Market Setup 6",
-    "card1": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 3
+    name: 'Market Setup 6',
+    card1: {
+      type: 'gem',
+      comp: '=',
+      cost: 3
     },
-    "card2": {
-      "type": "gem",
-      "comp": "=",
-      "cost": 4
+    card2: {
+      type: 'gem',
+      comp: '=',
+      cost: 4
     },
-    "card3": {
-      "type": "relic",
-      "comp": "<",
-      "cost": 4
+    card3: {
+      type: 'relic',
+      comp: '<',
+      cost: 4
     },
-    "card4": {
-      "type": "relic",
-      "comp": ">",
-      "cost": 4
+    card4: {
+      type: 'relic',
+      comp: '>',
+      cost: 4
     },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
+    card5: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card6": {
-      "type": "spell",
-      "comp": "><",
-      "cost": 3,
-      "costHigh": 4
+    card6: {
+      type: 'spell',
+      comp: '><',
+      cost: 3,
+      costHigh: 4
     },
-    "card7": {
-      "type": "spell",
-      "comp": "><",
-      "cost": 5,
-      "costHigh": 6
+    card7: {
+      type: 'spell',
+      comp: '><',
+      cost: 5,
+      costHigh: 6
     },
-    "card8": {
-      "type": "spell",
-      "comp": "><",
-      "cost": 5,
-      "costHigh": 6
+    card8: {
+      type: 'spell',
+      comp: '><',
+      cost: 5,
+      costHigh: 6
     },
-    "card9": {
-      "type": "spell",
-      "comp": ">",
-      "cost": 6
+    card9: {
+      type: 'spell',
+      comp: '>',
+      cost: 6
     }
   },
   {
-    "name": "Random Setup",
-    "card1": {
-      "type": "gem",
-      "comp": "any"
+    name: 'Random Setup',
+    card1: {
+      type: 'gem',
+      comp: 'any'
     },
-    "card2": {
-      "type": "gem",
-      "comp": "any"
+    card2: {
+      type: 'gem',
+      comp: 'any'
     },
-    "card3": {
-      "type": "gem",
-      "comp": "any"
+    card3: {
+      type: 'gem',
+      comp: 'any'
     },
-    "card4": {
-      "type": "relic",
-      "comp": "any"
+    card4: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card5": {
-      "type": "relic",
-      "comp": "any"
+    card5: {
+      type: 'relic',
+      comp: 'any'
     },
-    "card6": {
-      "type": "spell",
-      "comp": "any"
+    card6: {
+      type: 'spell',
+      comp: 'any'
     },
-    "card7": {
-      "type": "spell",
-      "comp": "any"
+    card7: {
+      type: 'spell',
+      comp: 'any'
     },
-    "card8": {
-      "type": "spell",
-      "comp": "any"
+    card8: {
+      type: 'spell',
+      comp: 'any'
     },
-    "card9": {
-      "type": "spell",
-      "comp": "any"
+    card9: {
+      type: 'spell',
+      comp: 'any'
     }
   }
 ]
