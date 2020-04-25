@@ -11,7 +11,7 @@ const About = () => {
     Data.SETS.filter(set => set.code !== 'PM').map(set => (
       <React.Fragment key={set.code}>
         <cite>{set.set}</cite>,{' '}
-      </ React.Fragment>
+      </React.Fragment>
     ))
 
   return (
