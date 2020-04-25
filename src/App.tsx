@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'normalize.css/normalize.css'
 
-import './App.sass'
+import styles from './App.module.sass'
 
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
@@ -12,12 +12,12 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <Router basename='aeons-end-randomizer'>
-      <div className='App'>
+      <div className={styles.App}>
         <Header />
-        <Sidebar />
         <Main />
         <Footer />
       </div>
+      <Sidebar />
     </Router>
   )
 }
