@@ -26,7 +26,6 @@ const SetCard = (props: PropTypes) => {
   }, [availableCards, availableMages, availableNemeses, checkSelected, set])
 
   useEffect(() => {
-    setCheckRef.current.checked = sel === 'all' || sel === 'partial'
     setCheckRef.current.indeterminate = sel === 'partial'
   }, [sel, setCheckRef])
 
@@ -50,7 +49,7 @@ const SetCard = (props: PropTypes) => {
     <div className={setClasses()}>
       <div className={styles.cardArea}>
         <label>
-          <input type='checkbox' ref={setCheckRef} /> Set
+          <input type='checkbox' checked={sel === 'all' || sel === 'partial'} ref={setCheckRef} /> Set
         </label>
       </div>
       <div className={styles.cardArea}>
