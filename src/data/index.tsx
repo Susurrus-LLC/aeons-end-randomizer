@@ -70,17 +70,19 @@ export type Set = {
 export type Sets = Set[]
 
 export type Data = {
-  availableMages: MageSet | [null]
-  availableNemeses: Nemeses | [null]
-  availableMarkets: MarketSet | [null]
-  availableCards: CardSet | [null]
-  availableNemCards: NemCardSet | [null]
-  numMages: MageNum | null
+  availableMages: MageSet
+  availableNemeses: Nemeses
+  availableMarkets: MarketSet
+  availableCards: CardSet
+  availableNemCards: NemCardSet
+  numMages: MageNum
   mages: MageSet | [null]
   nemesis: Nemesis | null
   market: Market | null
   supply: CardSet | [null]
   nemCards: NemCardSet | [null]
 }
+
+export type Selection = 'none' | 'partial' | 'all'
 
 export default { CARDS, MAGES, MARKETS, NEMESES, SETS, DEFAULTDATA }
