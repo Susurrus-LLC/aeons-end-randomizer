@@ -22,7 +22,7 @@ const Sidebar = () => {
     >
       <div className={`${styles.sidebar} ${styles.sb}`} ref={sidebarRef}>
         <button
-          className={styles.closeButton}
+          className={`${styles.closeButton} ${styles.navLink}`}
           type='button'
           onClick={toggleOpen}
         >
