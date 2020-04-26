@@ -11,8 +11,8 @@ const Sidebar = () => {
   const handleClickOutside = (e: MouseEvent) =>
     e.target === overlayRef.current ? toggleOpen() : null
 
-  const overlayRef = useRef(null)
-  const sidebarRef = useRef(null)
+  const overlayRef = useRef() as React.MutableRefObject<HTMLInputElement>
+  const sidebarRef = useRef() as React.MutableRefObject<HTMLInputElement>
 
   return open ? (
     <aside
