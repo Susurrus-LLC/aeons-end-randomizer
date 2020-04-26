@@ -2,18 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import data from '../../../../data'
+import data from '../../../data'
 
-import Expansions from '.'
+import Sets from '.'
 
 const DEFAULTDATA = data.DEFAULTDATA
 
-describe('Expansions page', () => {
+describe('Sets page', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div')
     ReactDOM.render(
       <Router>
-        <Expansions data={DEFAULTDATA} setData={() => DEFAULTDATA} />
+        <Sets data={DEFAULTDATA} setData={() => DEFAULTDATA} />
       </Router>,
       div
     )

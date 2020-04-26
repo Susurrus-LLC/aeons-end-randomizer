@@ -62,7 +62,7 @@ const SETS: Sets = [
     wave: 'NA'
   },
   {
-    set: 'Promo',
+    set: 'Promo Cards',
     code: 'PM',
     wave: 'PM'
   }

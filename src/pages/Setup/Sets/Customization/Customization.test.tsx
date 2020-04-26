@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import data from '../../../../../data'
+import data from '../../../../data'
 
 import Customization from '.'
 

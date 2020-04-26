@@ -1,0 +1,33 @@
+@import ../../styles/variables
+
+.setCard
+  width: 100%
+  margin: 0
+  padding: 0
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: left
+  align-items: baseline
+  align-content: space-between
+
+  h3, h4, p
+    margin: 0
+    padding: 0
+
+.baseSet
+  margin-top: $lnht * 1rem
+
+.expansionSet
+  padding-left: $lnht * 1rem
+
+.promoSet
+  .setTitle
+    font-style: italic
+
+.cardArea
+  padding-right: $lnht * 2rem
+
+.customizeLink
+  &:link, &:visited, &:hover, &:active
+    text-decoration: none

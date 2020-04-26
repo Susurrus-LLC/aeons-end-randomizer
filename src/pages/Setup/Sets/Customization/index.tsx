@@ -10,16 +10,13 @@ type PropTypes = {
   setData: Function
 }
 
-const Expansions = (props: PropTypes) => {
+const Customization = (props: PropTypes) => {
   let { wave } = useParams()
-
-  console.log(wave)
-
   return (
     <Page>
-      <h3>Choose Expansions for {wave}</h3>
+      <h4>Customize Content for {wave}</h4>
     </Page>
   )
 }
 
-export default Expansions
+export default Customization

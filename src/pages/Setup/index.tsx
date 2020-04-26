@@ -5,9 +5,8 @@ import { Data } from '../../data'
 
 import Page from '../../components/Page'
 
-import Waves from './Waves'
-import Expansions from './Waves/Expansions'
-import Customization from './Waves/Expansions/Customization'
+import Sets from './Sets'
+import Customization from './Sets/Customization'
 
 export type PropTypes = {
   data: Data
@@ -22,12 +21,9 @@ const Setup = (props: PropTypes) => {
       <h2>Choose the Content You&rsquo;ll Use</h2>
       <Switch>
         <Route exact path={path}>
-          <Waves data={props.data} setData={props.setData} />
+          <Sets data={props.data} setData={props.setData} />
         </Route>
         <Route exact path={`${path}/:wave`}>
-          <Expansions data={props.data} setData={props.setData} />
-        </Route>
-        <Route exact path={`${path}/:wave/customize`}>
           <Customization data={props.data} setData={props.setData} />
         </Route>
       </Switch>
