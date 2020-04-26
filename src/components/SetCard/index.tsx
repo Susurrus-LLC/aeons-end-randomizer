@@ -49,7 +49,12 @@ const SetCard = (props: PropTypes) => {
     <div className={setClasses()}>
       <div className={styles.cardArea}>
         <label>
-          <input type='checkbox' checked={sel === 'all' || sel === 'partial'} ref={setCheckRef} /> Set
+          <input
+            type='checkbox'
+            checked={sel === 'all' || sel === 'partial'}
+            ref={setCheckRef}
+          />{' '}
+          Set
         </label>
       </div>
       <div className={styles.cardArea}>
