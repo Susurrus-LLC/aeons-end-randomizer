@@ -27,7 +27,7 @@
     "react-scripts": "3.4.3"
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "gh-pages": "^3.1.0",
     "standard": "^14.3.4"
   },
