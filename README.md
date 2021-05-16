@@ -1,5 +1,14 @@
 # Aeon’s End Randomizer
 
+## Deprecated
+
+Several other Aeon’s End Randomizer tools exist, and there is not distinctive or unique functionality with this tool. As such, development has been discontinued in favor of these other tools.
+
+- Will Pflug’s [Aeon’s End Randomizer](https://boardgamegeek.com/thread/2131085/custom-market-randomizer-all-content-through-legac) built in Google Sheets
+- on3iro’s [Aeon’s End Randomizer](https://aeons-end-randomizer.de/), with the [source code here](https://github.com/on3iro/aeons-end-randomizer)
+
+---
+
 [![TypeScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![Release Version](https://img.shields.io/github/release/Susurrus-LLC/aeons-end-randomizer.svg)](https://github.com/Susurrus-LLC/aeons-end-randomizer/releases)
 [![License](https://img.shields.io/github/license/Susurrus-LLC/aeons-end-randomizer.svg)](https://github.com/Susurrus-LLC/aeons-end-randomizer/blob/master/LICENSE)
